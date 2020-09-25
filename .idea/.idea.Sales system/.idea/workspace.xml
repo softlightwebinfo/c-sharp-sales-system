@@ -9,17 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Sales system.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +36,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Sales system: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Sales system: Sales_system">
     <configuration name="Sales system: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Sales system/Sales system.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -90,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601038144118</updated>
-      <workItem from="1601038150739" duration="61000" />
+      <workItem from="1601038150739" duration="2892000" />
     </task>
     <servers />
   </component>
@@ -114,9 +107,49 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601038558512">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038558512" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1601038466907">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466907" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1601038466903">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466903" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1601038466902">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466902" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1601038466906">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466906" />
+    <state width="243" height="455" key="HiddenNamespacesPopup" timestamp="1601038853503">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="243" height="455" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038853503" />
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size" timestamp="1601038144105">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038144105" />
+    <state x="649" y="317" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601038813200">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="649" y="317" key="com.intellij.database.actions.DdlActions$CreateObject$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038813200" />
+    <state x="649" y="317" width="381" height="373" key="com.intellij.database.actions.DdlActions$ModifyObject$1" timestamp="1601038592101">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="649" y="317" width="381" height="373" key="com.intellij.database.actions.DdlActions$ModifyObject$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038592101" />
+    <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601039489231">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601039489231" />
+    <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601040683233">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601040683233" />
   </component>
 </project>
