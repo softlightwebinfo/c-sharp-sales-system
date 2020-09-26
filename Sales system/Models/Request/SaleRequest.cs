@@ -18,7 +18,7 @@ namespace Sales_system.Models.Request
     {
         public int IdProduct { get; set; }
         public decimal PriceUnit { get; set; }
-        public int Quantity { get; set; }
         public decimal Amount { get; set; }
+        public decimal Total { get; set; }
     }
 }

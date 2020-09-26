@@ -36,4 +36,51 @@ GET https://localhost:5001/clients
 Accept: */*
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
 
-<> 2020-09-26T062137.200.json
+###
+POST https://localhost:5001/sale
+Accept: */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+Content-Type: application/json
+
+{
+  "idClient": 1,
+  "total": 100,
+  "concepts": [
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    },
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    },
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    },
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    },
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    },
+    {
+      "idProduct": 3,
+      "priceUnit": 10.8,
+      "amount": 10,
+      "total": 100.0
+    }
+  ]
+}

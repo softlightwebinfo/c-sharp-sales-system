@@ -23,26 +23,37 @@ namespace Sales_system.Controllers
             {
                 using (salesSystemContext db = new salesSystemContext())
                 {
-                    var sale = new Sale();
-                    sale.Total = model.Total;
-                    sale.CreatedAt = DateTime.Now;
-                    sale.FkClientId = model.IdClient;
-                    db.Sales.Add(sale);
-                    db.SaveChanges();
-
-                    foreach (var rowConcept in model.Concepts)
+                    using (var transaction = db.Database.BeginTransaction())
                     {
-                        Concept concept = new Concept();
-                        concept.FkProductId = rowConcept.IdProduct;
-                        concept.PriceUnit = rowConcept.PriceUnit;
-                        concept.Amount = rowConcept.Amount;
-                        concept.FkSaleId = sale.Id;
-                        Console.WriteLine(concept);
-                        db.Concepts.Add(concept);
-                        db.SaveChanges();
-                    }
+                        try
+                        {
+                            var sale = new Sale();
+                            sale.Total = model.Concepts.Sum(d => d.Amount * d.PriceUnit);
+                            sale.CreatedAt = DateTime.Now;
+                            sale.FkClientId = model.IdClient;
+                            db.Sales.Add(sale);
+                            db.SaveChanges();
 
-                    response.Success = true;
+                            foreach (var rowConcept in model.Concepts)
+                            {
+                                Concept concept = new Concept();
+                                concept.FkProductId = rowConcept.IdProduct;
+                                concept.PriceUnit = rowConcept.PriceUnit;
+                                concept.Amount = rowConcept.Amount;
+                                concept.Total = rowConcept.Total;
+                                concept.FkSaleId = sale.Id;
+                                db.Concepts.Add(concept);
+                                db.SaveChanges();
+                            }
+
+                            response.Success = true;
+                            transaction.Commit();
+                        }
+                        catch (Exception e)
+                        {
+                            transaction.Rollback();
+                        }
+                    }
                 }
             }
             catch (Exception e)

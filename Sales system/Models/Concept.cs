@@ -12,6 +12,7 @@ namespace Sales_system.Models
         public decimal PriceUnit { get; set; }
         public decimal? Amount { get; set; }
         public int FkProductId { get; set; }
+        public decimal Total { get; set; }
 
         public virtual Product FkProduct { get; set; }
         public virtual Sale FkSale { get; set; }
