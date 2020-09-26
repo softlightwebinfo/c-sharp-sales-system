@@ -65,8 +65,6 @@ namespace Sales_system.Models
                     .HasPrecision(16, 2)
                     .HasColumnName("price_unit");
 
-                entity.Property(e => e.Quantity).HasColumnName("quantity");
-
                 entity.HasOne(d => d.FkProduct)
                     .WithMany(p => p.Concepts)
                     .HasForeignKey(d => d.FkProductId)

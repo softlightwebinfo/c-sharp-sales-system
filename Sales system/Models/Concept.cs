@@ -9,7 +9,6 @@ namespace Sales_system.Models
     {
         public long Id { get; set; }
         public long FkSaleId { get; set; }
-        public int Quantity { get; set; }
         public decimal PriceUnit { get; set; }
         public decimal? Amount { get; set; }
         public int FkProductId { get; set; }

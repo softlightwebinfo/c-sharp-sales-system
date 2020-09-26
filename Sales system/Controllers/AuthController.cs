@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Sales_system.Interfaces;
 using Sales_system.Models;
 using Sales_system.Models.Response;
 using Sales_system.Models.Request;
@@ -12,10 +13,27 @@ namespace Sales_system.Controllers
     [Route("[controller]")]
     public class AuthController : ControllerBase
     {
+        private IAuthService _authService;
+
+        public AuthController(IAuthService authService)
+        {
+            _authService = authService;
+        }
+
         [HttpPost("login")]
         public IActionResult Login([FromBody] AuthRequest model)
         {
-            return Ok(model);
+            Response response = new Response();
+            var userResponse = _authService.Auth(model);
+
+            if (userResponse == null)
+            {
+                response.Message = "User o password incorrect";
+                return BadRequest(response);
+            }
+            response.Success = true;
+            response.Data = userResponse;
+            return Ok(response);
         }
     }
 }

@@ -1,0 +1,39 @@
+DELETE https://localhost:5001/clients/6
+
+###
+PUT https://localhost:5001/clients
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Samy AS"
+}
+
+###
+POST https://localhost:5001/clients
+Content-Type: application/json
+
+{
+  "name": "Samy"
+}
+
+###
+GET https://localhost:5001/weatherforecast
+Accept: */*
+Cache-Control: no-cache
+
+###
+POST https://localhost:5001/auth/login
+Content-Type: application/json
+
+{
+  "email": "rafael.gonzalez.1737@gmail.com",
+  "password": "123456789"
+}
+
+###
+GET https://localhost:5001/clients
+Accept: */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+
+<> 2020-09-26T062137.200.json
