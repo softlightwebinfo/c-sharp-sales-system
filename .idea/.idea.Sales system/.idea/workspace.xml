@@ -9,8 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Request/AuthRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Response/UserResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b/storage_v2/_src_/database/sales_system.wiAkhA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/dataSources/c46986af-da37-421e-b323-80bde5d7a48b/storage_v2/_src_/database/sales_system.wiAkhA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Sales system.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Sales system.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +31,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CF38E32A-92D3-40E3-ABE3-7A488DB956B3/C/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Sales system/.gitignore" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/WeatherForecastController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/sales_systemContext.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Program.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Pages/Client/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/ClientController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Request/ClientRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/ClientRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Response/Response.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Tools/Encrypt.cs" />
+        <option value="$PROJECT_DIR$/Sales system/docker-compose.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dc44dfac-54a4-4673-998c-379cbe164ce2/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dc44dfac-54a4-4673-998c-379cbe164ce2/console_1.sql" />
+        <option value="$PROJECT_DIR$/Sales system/README.md" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/ClientsController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/AuthRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/UserController.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/IUserService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/AuthService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Response/UserResponse.cs" />
       </list>
     </option>
   </component>
@@ -41,9 +75,195 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/auth/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;rafael.gonzalez.1737@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;123456789&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="https://localhost:5001/clients/6" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="PUT https://localhost:5001/clients&#10;Content-Type: application/json&#10;&#10;{&#10;  &quot;id&quot;: 6,&#10;  &quot;name&quot;: &quot;Samy AS&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/clients" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 6,&#10;  &quot;name&quot;: &quot;Samy AS&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/clients" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Samy&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/clients" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Emprendimos&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/clients" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/weatherforecast" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://httpbin.org/anything" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="a4b625f0-0007-4086-9197-1c6fb6d08f7b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="ts" />
+                <option name="value" value="1601042716" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://httpbin.org/status/301" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://httpbin.org/get" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="show_env" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://httpbin.org/ip" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sales system: Sales_system">
+    <configuration name="rest-api_1#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_1#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Sales system: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Sales system/Sales system.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -74,6 +294,42 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Sales system: Compose Deployment (1)" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="Sales system/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sales system: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sales system.mydb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mydb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Sales system/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_1#5" />
+        <item itemvalue="Docker.Sales system.mydb: Compose Deployment" />
+        <item itemvalue="Docker.Sales system: Compose Deployment (1)" />
+        <item itemvalue="Docker.Sales system: Compose Deployment" />
+        <item itemvalue="HTTP Request.rest-api_1#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,14 +339,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601038144118</updated>
-      <workItem from="1601038150739" duration="2892000" />
+      <workItem from="1601038150739" duration="3805000" />
+      <workItem from="1601063161036" duration="761000" />
+      <workItem from="1601112541647" duration="8364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -102,43 +360,72 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601038558512">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2240" y="217" key="#Docker" timestamp="1601131628042">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2240" y="217" key="#Docker/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131628042" />
+    <state x="2391" y="319" key="#Web_Browsers" timestamp="1601128106683">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="622" y="310" key="#Web_Browsers/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601042779100" />
+    <state x="2391" y="319" key="#Web_Browsers/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601128106683" />
+    <state x="2183" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601132083091">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038558512" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1601038466907">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2183" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132083091" />
+    <state x="2498" y="415" key="DockerComposeFileDialog" timestamp="1601131603011">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466907" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1601038466903">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2498" y="415" key="DockerComposeFileDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131603011" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1601132778879">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466903" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1601038466902">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567583" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132778879" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1601132778877">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466902" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1601038466906">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567580" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132778877" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1601132778876">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038466906" />
-    <state width="243" height="455" key="HiddenNamespacesPopup" timestamp="1601038853503">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567578" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132778876" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1601132778878">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567581" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132778878" />
+    <state width="278" height="468" key="HiddenNamespacesPopup" timestamp="1601131980016">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="243" height="455" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038853503" />
+    <state width="278" height="468" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131980016" />
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size" timestamp="1601038144105">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038144105" />
-    <state x="649" y="317" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601038813200">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2330" y="225" key="RiderGenerateDialog" timestamp="1601129379876">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2330" y="225" key="RiderGenerateDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601129379876" />
+    <state x="2422" y="326" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601131894922">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="649" y="317" key="com.intellij.database.actions.DdlActions$CreateObject$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038813200" />
+    <state x="2422" y="326" key="com.intellij.database.actions.DdlActions$CreateObject$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131894922" />
+    <state x="2534" y="434" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601131971532">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2534" y="434" width="323" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131971532" />
     <state x="649" y="317" width="381" height="373" key="com.intellij.database.actions.DdlActions$ModifyObject$1" timestamp="1601038592101">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -147,9 +434,15 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601039489231" />
-    <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601040683233">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601131113162">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601040683233" />
+    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131113162" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1601132592472">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1601112805342" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601132592472" />
   </component>
 </project>

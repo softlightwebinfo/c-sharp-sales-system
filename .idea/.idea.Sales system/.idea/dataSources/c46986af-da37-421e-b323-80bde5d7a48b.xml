@@ -257,10 +257,10 @@ false Antarctica/Davis
 false Antarctica/DumontDUrville
 false Antarctica/Macquarie
 false Antarctica/Mawson
-false Antarctica/McMurdo
+true Antarctica/McMurdo
 false Antarctica/Palmer
 false Antarctica/Rothera
-false Antarctica/South_Pole
+true Antarctica/South_Pole
 false Antarctica/Syowa
 true Antarctica/Troll
 false Antarctica/Vostok
@@ -649,8 +649,8 @@ false NOVT
 false NPT
 false NST
 false NUT
-false NZ
-false NZ-CHAT
+true NZ
+true NZ-CHAT
 true NZDT
 false NZST
 false NZT
@@ -675,10 +675,10 @@ true PST8PDT
 false PWT
 true PYST
 false PYT
-false Pacific/Apia
-false Pacific/Auckland
+true Pacific/Apia
+true Pacific/Auckland
 false Pacific/Bougainville
-false Pacific/Chatham
+true Pacific/Chatham
 false Pacific/Chuuk
 true Pacific/Easter
 false Pacific/Efate
@@ -1024,10 +1024,10 @@ false posix/Antarctica/Davis
 false posix/Antarctica/DumontDUrville
 false posix/Antarctica/Macquarie
 false posix/Antarctica/Mawson
-false posix/Antarctica/McMurdo
+true posix/Antarctica/McMurdo
 false posix/Antarctica/Palmer
 false posix/Antarctica/Rothera
-false posix/Antarctica/South_Pole
+true posix/Antarctica/South_Pole
 false posix/Antarctica/Syowa
 true posix/Antarctica/Troll
 false posix/Antarctica/Vostok
@@ -1320,15 +1320,15 @@ true posix/MST7MDT
 true posix/Mexico/BajaNorte
 true posix/Mexico/BajaSur
 true posix/Mexico/General
-false posix/NZ
-false posix/NZ-CHAT
+true posix/NZ
+true posix/NZ-CHAT
 true posix/Navajo
 false posix/PRC
 true posix/PST8PDT
-false posix/Pacific/Apia
-false posix/Pacific/Auckland
+true posix/Pacific/Apia
+true posix/Pacific/Auckland
 false posix/Pacific/Bougainville
-false posix/Pacific/Chatham
+true posix/Pacific/Chatham
 false posix/Pacific/Chuuk
 true posix/Pacific/Easter
 false posix/Pacific/Efate
@@ -1442,7 +1442,7 @@ true posixrules
       <ObjectId>13400</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>26127</IntrospectionStateNumber>
+      <IntrospectionStateNumber>26197</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|20571|20573|1
 </Relations>
@@ -1450,11 +1450,12 @@ true posixrules
     <database id="10" parent="1" name="sales_system">
       <ObjectId>21850</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>26160</IntrospectionStateNumber>
+      <IntrospectionStateNumber>26199</IntrospectionStateNumber>
       <Relations>sequence|table|21851|21853|1
 sequence|table|21862|21864|1
 sequence|table|21877|21879|1
 sequence|table|21892|21894|1
+sequence|table|21908|21910|1
 </Relations>
     </database>
     <database id="11" parent="1" name="tpv">
@@ -1529,7 +1530,7 @@ sequence|table|21892|21894|1
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>26128</IntrospectionStateNumber>
+      <IntrospectionStateNumber>26198</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="28" parent="9" name="heap">
@@ -1615,7 +1616,7 @@ sequence|table|21892|21894|1
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>26161</IntrospectionStateNumber>
+      <IntrospectionStateNumber>26200</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="43" parent="10" name="heap">
@@ -1725,27 +1726,38 @@ sequence|table|21892|21894|1
       <StateNumber>26129</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="62" parent="42" name="clients">
+    <sequence id="62" parent="42" name="users_id_seq">
+      <ObjectId>21908</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>26189</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="63" parent="42" name="clients">
       <ObjectId>21894</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>26159</StateNumber>
     </table>
-    <table id="63" parent="42" name="concepts">
+    <table id="64" parent="42" name="concepts">
       <ObjectId>21864</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>26142</StateNumber>
     </table>
-    <table id="64" parent="42" name="products">
+    <table id="65" parent="42" name="products">
       <ObjectId>21879</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>26150</StateNumber>
+      <StateNumber>26174</StateNumber>
     </table>
-    <table id="65" parent="42" name="sales">
+    <table id="66" parent="42" name="sales">
       <ObjectId>21853</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>26158</StateNumber>
     </table>
-    <column id="66" parent="56" name="Id">
+    <table id="67" parent="42" name="users">
+      <ObjectId>21910</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>26189</StateNumber>
+    </table>
+    <column id="68" parent="56" name="Id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1753,61 +1765,61 @@ sequence|table|21892|21894|1
       <TypeId>23</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
-    <column id="67" parent="56" name="Name">
+    <column id="69" parent="56" name="Name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <StateNumber>21453</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="68" parent="56" name="Description">
+    <column id="70" parent="56" name="Description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>21453</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <index id="69" parent="56" name="PK_TestRecords">
+    <index id="71" parent="56" name="PK_TestRecords">
       <ObjectId>20579</ObjectId>
       <StateNumber>21453</StateNumber>
       <ColNames>Id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="70" parent="56" name="PK_TestRecords">
+    <key id="72" parent="56" name="PK_TestRecords">
       <ObjectId>20580</ObjectId>
       <StateNumber>21453</StateNumber>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_TestRecords</UnderlyingIndexName>
     </key>
-    <column id="71" parent="57" name="MigrationId">
+    <column id="73" parent="57" name="MigrationId">
       <Position>1</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>21452</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="72" parent="57" name="ProductVersion">
+    <column id="74" parent="57" name="ProductVersion">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>21452</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="73" parent="57" name="PK___EFMigrationsHistory">
+    <index id="75" parent="57" name="PK___EFMigrationsHistory">
       <ObjectId>20569</ObjectId>
       <StateNumber>21452</StateNumber>
       <ColNames>MigrationId</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="74" parent="57" name="PK___EFMigrationsHistory">
+    <key id="76" parent="57" name="PK___EFMigrationsHistory">
       <ObjectId>20570</ObjectId>
       <StateNumber>21452</StateNumber>
       <ColNames>MigrationId</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK___EFMigrationsHistory</UnderlyingIndexName>
     </key>
-    <column id="75" parent="62" name="id">
+    <column id="77" parent="63" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1815,28 +1827,28 @@ sequence|table|21892|21894|1
       <DefaultExpression>nextval(&apos;clients_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="76" parent="62" name="client_name">
+    <column id="78" parent="63" name="client_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26155</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="77" parent="62" name="clients_pk">
+    <index id="79" parent="63" name="clients_pk">
       <ObjectId>21898</ObjectId>
       <StateNumber>26155</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="78" parent="62" name="clients_pk">
+    <key id="80" parent="63" name="clients_pk">
       <ObjectId>21899</ObjectId>
       <StateNumber>26155</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>clients_pk</UnderlyingIndexName>
     </key>
-    <column id="79" parent="63" name="id">
+    <column id="81" parent="64" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1844,21 +1856,21 @@ sequence|table|21892|21894|1
       <DefaultExpression>nextval(&apos;concepts_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="80" parent="63" name="fk_sale_id">
+    <column id="82" parent="64" name="fk_sale_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26136</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="81" parent="63" name="quantity">
+    <column id="83" parent="64" name="quantity">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="82" parent="63" name="price_unit">
+    <column id="84" parent="64" name="price_unit">
       <Position>4</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1866,35 +1878,35 @@ sequence|table|21892|21894|1
       <DefaultExpression>0.0</DefaultExpression>
       <TypeId>1700</TypeId>
     </column>
-    <column id="83" parent="63" name="amount">
+    <column id="85" parent="64" name="amount">
       <Position>5</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <StateNumber>26136</StateNumber>
       <DefaultExpression>0.0</DefaultExpression>
       <TypeId>1700</TypeId>
     </column>
-    <column id="84" parent="63" name="fk_product_id">
+    <column id="86" parent="64" name="fk_product_id">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26136</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="85" parent="63" name="concepts_pk">
+    <index id="87" parent="64" name="concepts_pk">
       <ObjectId>21870</ObjectId>
       <StateNumber>26136</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="86" parent="63" name="concepts_pk">
+    <key id="88" parent="64" name="concepts_pk">
       <ObjectId>21871</ObjectId>
       <StateNumber>26136</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>concepts_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="87" parent="63" name="concepts_sales_id_fk">
+    <foreign-key id="89" parent="64" name="concepts_sales_id_fk">
       <ObjectId>21872</ObjectId>
       <StateNumber>26142</StateNumber>
       <ColNames>fk_sale_id</ColNames>
@@ -1906,7 +1918,7 @@ sequence|table|21892|21894|1
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="88" parent="63" name="concepts_products_id_fk">
+    <foreign-key id="90" parent="64" name="concepts_products_id_fk">
       <ObjectId>21887</ObjectId>
       <StateNumber>26150</StateNumber>
       <ColNames>fk_product_id</ColNames>
@@ -1918,7 +1930,7 @@ sequence|table|21892|21894|1
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="89" parent="64" name="id">
+    <column id="91" parent="65" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -1926,14 +1938,14 @@ sequence|table|21892|21894|1
       <DefaultExpression>nextval(&apos;products_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="90" parent="64" name="product_name">
+    <column id="92" parent="65" name="product_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26147</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="91" parent="64" name="unit_price">
+    <column id="93" parent="65" name="unit_price">
       <Position>3</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1941,7 +1953,7 @@ sequence|table|21892|21894|1
       <DefaultExpression>0.0</DefaultExpression>
       <TypeId>1700</TypeId>
     </column>
-    <column id="92" parent="64" name="amount">
+    <column id="94" parent="65" name="amount">
       <Position>4</Position>
       <DataType>numeric(16)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1949,21 +1961,28 @@ sequence|table|21892|21894|1
       <DefaultExpression>0.0</DefaultExpression>
       <TypeId>1700</TypeId>
     </column>
-    <index id="93" parent="64" name="products_pk">
+    <column id="95" parent="65" name="description">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26174</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="96" parent="65" name="products_pk">
       <ObjectId>21885</ObjectId>
       <StateNumber>26147</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="94" parent="64" name="products_pk">
+    <key id="97" parent="65" name="products_pk">
       <ObjectId>21886</ObjectId>
       <StateNumber>26147</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>products_pk</UnderlyingIndexName>
     </key>
-    <column id="95" parent="65" name="id">
+    <column id="98" parent="66" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1971,7 +1990,7 @@ sequence|table|21892|21894|1
       <DefaultExpression>nextval(&apos;table_name_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="96" parent="65" name="total">
+    <column id="99" parent="66" name="total">
       <Position>2</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1979,7 +1998,7 @@ sequence|table|21892|21894|1
       <DefaultExpression>0.0</DefaultExpression>
       <TypeId>1700</TypeId>
     </column>
-    <column id="97" parent="65" name="created_at">
+    <column id="100" parent="66" name="created_at">
       <Position>3</Position>
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
@@ -1987,33 +2006,33 @@ sequence|table|21892|21894|1
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="98" parent="65" name="fk_client_id">
+    <column id="101" parent="66" name="fk_client_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>26158</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="99" parent="65" name="table_name_pk">
+    <index id="102" parent="66" name="table_name_pk">
       <ObjectId>21859</ObjectId>
       <StateNumber>26129</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="100" parent="65" name="table_name_id_index">
+    <index id="103" parent="66" name="table_name_id_index">
       <ObjectId>21861</ObjectId>
       <StateNumber>26130</StateNumber>
       <ColNames>id</ColNames>
     </index>
-    <key id="101" parent="65" name="table_name_pk">
+    <key id="104" parent="66" name="table_name_pk">
       <ObjectId>21860</ObjectId>
       <StateNumber>26129</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>table_name_pk</UnderlyingIndexName>
     </key>
-    <foreign-key id="102" parent="65" name="sales_clients_id_fk">
+    <foreign-key id="105" parent="66" name="sales_clients_id_fk">
       <ObjectId>21900</ObjectId>
       <StateNumber>26159</StateNumber>
       <ColNames>fk_client_id</ColNames>
@@ -2025,5 +2044,68 @@ sequence|table|21892|21894|1
       <OnDelete>restrict</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
+    <column id="106" parent="67" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="107" parent="67" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="108" parent="67" name="user_password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="109" parent="67" name="username">
+      <Position>4</Position>
+      <DataType>varchar(49)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="110" parent="67" name="first_name">
+      <Position>5</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="111" parent="67" name="surnames">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>26189</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="112" parent="67" name="users_pk">
+      <ObjectId>21917</ObjectId>
+      <StateNumber>26189</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="113" parent="67" name="users_username_uindex">
+      <ObjectId>21919</ObjectId>
+      <StateNumber>26190</StateNumber>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="114" parent="67" name="users_pk">
+      <ObjectId>21918</ObjectId>
+      <StateNumber>26189</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pk</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
