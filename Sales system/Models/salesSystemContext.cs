@@ -17,10 +17,14 @@ namespace Sales_system.Models
         {
         }
 
+        public virtual DbSet<Business> Businesses { get; set; }
+        public virtual DbSet<BusinessProduct> BusinessProducts { get; set; }
+        public virtual DbSet<BusinessSupplier> BusinessSuppliers { get; set; }
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Concept> Concepts { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -34,6 +38,99 @@ namespace Sales_system.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Business>(entity =>
+            {
+                entity.ToTable("business");
+
+                entity.HasIndex(e => e.FkUserId, "business_fk_user_id_index");
+
+                entity.HasIndex(e => e.Id, "business_id_index");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Address)
+                    .HasMaxLength(150)
+                    .HasColumnName("address");
+
+                entity.Property(e => e.BusinessName)
+                    .IsRequired()
+                    .HasMaxLength(80)
+                    .HasColumnName("business_name");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.Property(e => e.FkUserId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("fk_user_id");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("updated_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.HasOne(d => d.FkUser)
+                    .WithMany(p => p.Businesses)
+                    .HasForeignKey(d => d.FkUserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("business_users_id_fk");
+            });
+
+            modelBuilder.Entity<BusinessProduct>(entity =>
+            {
+                entity.HasKey(e => new { e.FkBusinessId, e.FkProductId })
+                    .HasName("business_products_pk");
+
+                entity.ToTable("business_products");
+
+                entity.HasIndex(e => new { e.FkBusinessId, e.FkProductId }, "business_products_fk_business_id_fk_product_id_index");
+
+                entity.Property(e => e.FkBusinessId).HasColumnName("fk_business_id");
+
+                entity.Property(e => e.FkProductId).HasColumnName("fk_product_id");
+
+                entity.HasOne(d => d.FkBusiness)
+                    .WithMany(p => p.BusinessProducts)
+                    .HasForeignKey(d => d.FkBusinessId)
+                    .HasConstraintName("business_products_business_id_fk");
+
+                entity.HasOne(d => d.FkProduct)
+                    .WithMany(p => p.BusinessProducts)
+                    .HasForeignKey(d => d.FkProductId)
+                    .HasConstraintName("business_products_products_id_fk");
+            });
+
+            modelBuilder.Entity<BusinessSupplier>(entity =>
+            {
+                entity.HasKey(e => new { e.FkBusinessId, e.FkSupplierId })
+                    .HasName("business_suppliers_pk_2");
+
+                entity.ToTable("business_suppliers");
+
+                entity.HasIndex(e => new { e.FkBusinessId, e.FkSupplierId }, "business_suppliers_fk_business_id_fk_supplier_id_index");
+
+                entity.HasIndex(e => e.FkBusinessId, "business_suppliers_pk")
+                    .IsUnique();
+
+                entity.Property(e => e.FkBusinessId).HasColumnName("fk_business_id");
+
+                entity.Property(e => e.FkSupplierId).HasColumnName("fk_supplier_id");
+
+                entity.HasOne(d => d.FkBusiness)
+                    .WithOne(p => p.BusinessSupplier)
+                    .HasForeignKey<BusinessSupplier>(d => d.FkBusinessId)
+                    .HasConstraintName("business_suppliers_business_id_fk");
+
+                entity.HasOne(d => d.FkSupplier)
+                    .WithMany(p => p.BusinessSuppliers)
+                    .HasForeignKey(d => d.FkSupplierId)
+                    .HasConstraintName("business_suppliers_suppliers_id_fk");
+            });
+
             modelBuilder.Entity<Client>(entity =>
             {
                 entity.ToTable("clients");
@@ -133,6 +230,49 @@ namespace Sales_system.Models
                     .HasConstraintName("sales_clients_id_fk");
             });
 
+            modelBuilder.Entity<Supplier>(entity =>
+            {
+                entity.ToTable("suppliers");
+
+                entity.HasIndex(e => e.FkUserId, "suppliers_fk_user_id_index");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.Property(e => e.Email)
+                    .HasMaxLength(150)
+                    .HasColumnName("email");
+
+                entity.Property(e => e.FkUserId).HasColumnName("fk_user_id");
+
+                entity.Property(e => e.Phone)
+                    .IsRequired()
+                    .HasMaxLength(12)
+                    .HasColumnName("phone");
+
+                entity.Property(e => e.SupplierName)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("supplier_name");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("updated_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.HasOne(d => d.FkUser)
+                    .WithMany(p => p.Suppliers)
+                    .HasForeignKey(d => d.FkUserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("suppliers_users_id_fk");
+            });
+
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("users");
@@ -141,6 +281,12 @@ namespace Sales_system.Models
                     .IsUnique();
 
                 entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
 
                 entity.Property(e => e.Email)
                     .IsRequired()
@@ -157,6 +303,12 @@ namespace Sales_system.Models
                     .HasColumnType("character varying")
                     .HasColumnName("surnames")
                     .HasAnnotation("Relational:ColumnType", "character varying");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("updated_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
 
                 entity.Property(e => e.UserPassword)
                     .IsRequired()

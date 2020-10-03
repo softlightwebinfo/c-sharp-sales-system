@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Sales_system.Models;
@@ -9,9 +10,10 @@ using Sales_system.Models;
 namespace Sales_system.Migrations
 {
     [DbContext(typeof(salesSystemContext))]
-    partial class salesSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20201003195937_CreateTableBusiness")]
+    partial class CreateTableBusiness
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,49 +64,6 @@ namespace Sales_system.Migrations
                     b.HasIndex(new[] { "Id" }, "business_id_index");
 
                     b.ToTable("business");
-                });
-
-            modelBuilder.Entity("Sales_system.Models.BusinessProduct", b =>
-                {
-                    b.Property<long>("FkBusinessId")
-                        .HasColumnType("bigint")
-                        .HasColumnName("fk_business_id");
-
-                    b.Property<int>("FkProductId")
-                        .HasColumnType("integer")
-                        .HasColumnName("fk_product_id");
-
-                    b.HasKey("FkBusinessId", "FkProductId")
-                        .HasName("business_products_pk");
-
-                    b.HasIndex("FkProductId");
-
-                    b.HasIndex(new[] { "FkBusinessId", "FkProductId" }, "business_products_fk_business_id_fk_product_id_index");
-
-                    b.ToTable("business_products");
-                });
-
-            modelBuilder.Entity("Sales_system.Models.BusinessSupplier", b =>
-                {
-                    b.Property<long>("FkBusinessId")
-                        .HasColumnType("bigint")
-                        .HasColumnName("fk_business_id");
-
-                    b.Property<long>("FkSupplierId")
-                        .HasColumnType("bigint")
-                        .HasColumnName("fk_supplier_id");
-
-                    b.HasKey("FkBusinessId", "FkSupplierId")
-                        .HasName("business_suppliers_pk_2");
-
-                    b.HasIndex("FkSupplierId");
-
-                    b.HasIndex(new[] { "FkBusinessId", "FkSupplierId" }, "business_suppliers_fk_business_id_fk_supplier_id_index");
-
-                    b.HasIndex(new[] { "FkBusinessId" }, "business_suppliers_pk")
-                        .IsUnique();
-
-                    b.ToTable("business_suppliers");
                 });
 
             modelBuilder.Entity("Sales_system.Models.Client", b =>
@@ -234,54 +193,6 @@ namespace Sales_system.Migrations
                     b.ToTable("sales");
                 });
 
-            modelBuilder.Entity("Sales_system.Models.Supplier", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasColumnName("id")
-                        .UseIdentityByDefaultColumn();
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at")
-                        .HasDefaultValueSql("now()");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(150)
-                        .HasColumnType("character varying(150)")
-                        .HasColumnName("email");
-
-                    b.Property<long>("FkUserId")
-                        .HasColumnType("bigint")
-                        .HasColumnName("fk_user_id");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("character varying(12)")
-                        .HasColumnName("phone");
-
-                    b.Property<string>("SupplierName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("supplier_name");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("updated_at")
-                        .HasDefaultValueSql("now()");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex(new[] { "FkUserId" }, "suppliers_fk_user_id_index");
-
-                    b.ToTable("suppliers");
-                });
-
             modelBuilder.Entity("Sales_system.Models.User", b =>
                 {
                     b.Property<long>("Id")
@@ -289,12 +200,6 @@ namespace Sales_system.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("id")
                         .UseIdentityByDefaultColumn();
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at")
-                        .HasDefaultValueSql("now()");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -312,12 +217,6 @@ namespace Sales_system.Migrations
                         .IsRequired()
                         .HasColumnType("character varying")
                         .HasColumnName("surnames");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("updated_at")
-                        .HasDefaultValueSql("now()");
 
                     b.Property<string>("UserPassword")
                         .IsRequired()
@@ -350,48 +249,6 @@ namespace Sales_system.Migrations
                     b.Navigation("FkUser");
                 });
 
-            modelBuilder.Entity("Sales_system.Models.BusinessProduct", b =>
-                {
-                    b.HasOne("Sales_system.Models.Business", "FkBusiness")
-                        .WithMany("BusinessProducts")
-                        .HasForeignKey("FkBusinessId")
-                        .HasConstraintName("business_products_business_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Sales_system.Models.Product", "FkProduct")
-                        .WithMany("BusinessProducts")
-                        .HasForeignKey("FkProductId")
-                        .HasConstraintName("business_products_products_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("FkBusiness");
-
-                    b.Navigation("FkProduct");
-                });
-
-            modelBuilder.Entity("Sales_system.Models.BusinessSupplier", b =>
-                {
-                    b.HasOne("Sales_system.Models.Business", "FkBusiness")
-                        .WithOne("BusinessSupplier")
-                        .HasForeignKey("Sales_system.Models.BusinessSupplier", "FkBusinessId")
-                        .HasConstraintName("business_suppliers_business_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Sales_system.Models.Supplier", "FkSupplier")
-                        .WithMany("BusinessSuppliers")
-                        .HasForeignKey("FkSupplierId")
-                        .HasConstraintName("business_suppliers_suppliers_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("FkBusiness");
-
-                    b.Navigation("FkSupplier");
-                });
-
             modelBuilder.Entity("Sales_system.Models.Concept", b =>
                 {
                     b.HasOne("Sales_system.Models.Product", "FkProduct")
@@ -422,24 +279,6 @@ namespace Sales_system.Migrations
                     b.Navigation("FkClient");
                 });
 
-            modelBuilder.Entity("Sales_system.Models.Supplier", b =>
-                {
-                    b.HasOne("Sales_system.Models.User", "FkUser")
-                        .WithMany("Suppliers")
-                        .HasForeignKey("FkUserId")
-                        .HasConstraintName("suppliers_users_id_fk")
-                        .IsRequired();
-
-                    b.Navigation("FkUser");
-                });
-
-            modelBuilder.Entity("Sales_system.Models.Business", b =>
-                {
-                    b.Navigation("BusinessProducts");
-
-                    b.Navigation("BusinessSupplier");
-                });
-
             modelBuilder.Entity("Sales_system.Models.Client", b =>
                 {
                     b.Navigation("Sales");
@@ -447,8 +286,6 @@ namespace Sales_system.Migrations
 
             modelBuilder.Entity("Sales_system.Models.Product", b =>
                 {
-                    b.Navigation("BusinessProducts");
-
                     b.Navigation("Concepts");
                 });
 
@@ -457,16 +294,9 @@ namespace Sales_system.Migrations
                     b.Navigation("Concepts");
                 });
 
-            modelBuilder.Entity("Sales_system.Models.Supplier", b =>
-                {
-                    b.Navigation("BusinessSuppliers");
-                });
-
             modelBuilder.Entity("Sales_system.Models.User", b =>
                 {
                     b.Navigation("Businesses");
-
-                    b.Navigation("Suppliers");
                 });
 #pragma warning restore 612, 618
         }

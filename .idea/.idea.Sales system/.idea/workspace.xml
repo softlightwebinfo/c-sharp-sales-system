@@ -9,9 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Business/ReadController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CF38E32A-92D3-40E3-ABE3-7A488DB956B3/C/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CF38E32A-92D3-40E3-ABE3-7A488DB956B3/23/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,7 +57,6 @@
         <option value="$PROJECT_DIR$/Sales system/Models/Concept.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Request/SaleRequest.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
-        <option value="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/SaleController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/AuthController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Auth/AuthController.cs" />
@@ -70,10 +76,14 @@
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/ReadController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/UpdateController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Sale/AddController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Product.cs" />
         <option value="$PROJECT_DIR$/Sales system/Tools/Encrypt.cs" />
         <option value="$PROJECT_DIR$/Sales system/README.md" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Bussiness/ReadController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Business.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/ReadController.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +110,25 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/business" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="https://localhost:5001/clients" />
@@ -583,7 +612,7 @@
     <configuration name="res-api_1#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="7" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="rest-api_1#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="7" runType="Run single request">
+    <configuration name="res-api_1#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Sales system: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -618,11 +647,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.res-api_1#8" />
         <item itemvalue="HTTP Request.res-api_1#3" />
         <item itemvalue="HTTP Request.res-api_1#6" />
         <item itemvalue="HTTP Request.res-api_1#7" />
         <item itemvalue="HTTP Request.res-api_1#5" />
-        <item itemvalue="HTTP Request.rest-api_1#7" />
       </list>
     </recent_temporary>
   </component>
@@ -639,7 +668,7 @@
       <workItem from="1601112541647" duration="16389000" />
       <workItem from="1601404513536" duration="208000" />
       <workItem from="1601404854599" duration="195000" />
-      <workItem from="1601751176319" duration="3441000" />
+      <workItem from="1601751176319" duration="6699000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor de código en clases y empezar a implementar patron de diseño SOLID">
       <created>1601754560183</created>
@@ -648,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601754560183</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor de código en clases y empezar a implementar patron de diseño SOLID">
+      <created>1601754688178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601754688178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -726,30 +762,30 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2498" y="415" key="DockerComposeFileDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131603011" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1601753914439">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1601756456584">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045491" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567583" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601753914439" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1601753914436">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601756456584" />
+    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1601756456582">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045489" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567580" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601753914436" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1601753914435">
+    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601756456582" />
+    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1601756456581">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045487" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567578" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601753914435" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1601753914437">
+    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601756456581" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1601756456583">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045490" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567581" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601753914437" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601756456583" />
     <state width="1878" height="403" key="GridCell.Tab.1.bottom" timestamp="1601141045495">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -840,30 +876,31 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="649" y="317" width="381" height="373" key="com.intellij.database.actions.DdlActions$ModifyObject$1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038592101" />
-    <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601039489231">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2377" y="362" width="428" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601755035376">
+      <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601039489231" />
-    <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601140310876">
+    <state x="2377" y="362" width="428" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601755035375" />
+    <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601758067588">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140310876" />
     <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601040683233" />
-    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601139627356" />
-    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1" timestamp="1601754571531">
+    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601758067588" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1" timestamp="1601758127688">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="0" width="1680" height="1050" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601754433165" />
-    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601754571531" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601758127688" />
     <state x="2318" y="172" width="644" height="735" key="find.popup" timestamp="1601752599389">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2318" y="172" width="644" height="735" key="find.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601752599389" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1601140256619">
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1601755358107">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140256619" />
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1601112805342" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601133281056" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601755358107" />
   </component>
 </project>

@@ -17,6 +17,9 @@
           <e p="Auth" t="Include">
             <e p="LoginController.cs" t="Include" />
           </e>
+          <e p="Business" t="Include">
+            <e p="ReadController.cs" t="Include" />
+          </e>
           <e p="Client" t="Include">
             <e p="CreateController.cs" t="Include" />
             <e p="DeleteController.cs" t="Include" />
@@ -38,9 +41,18 @@
         <e p="Migrations" t="Include">
           <e p="20201003194639_InitialCreate.cs" t="Include" />
           <e p="20201003194639_InitialCreate.Designer.cs" t="Include" />
+          <e p="20201003195937_CreateTableBusiness.cs" t="Include" />
+          <e p="20201003195937_CreateTableBusiness.Designer.cs" t="Include" />
+          <e p="20201003200601_addColumnsUsers.cs" t="Include" />
+          <e p="20201003200601_addColumnsUsers.Designer.cs" t="Include" />
+          <e p="20201003204832_addTablesBussinesProductsAndSupplier.cs" t="Include" />
+          <e p="20201003204832_addTablesBussinesProductsAndSupplier.Designer.cs" t="Include" />
           <e p="salesSystemContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="Business.cs" t="Include" />
+          <e p="BusinessProduct.cs" t="Include" />
+          <e p="BusinessSupplier.cs" t="Include" />
           <e p="Client.cs" t="Include" />
           <e p="Common" t="Include">
             <e p="AppSetting.cs" t="Include" />
@@ -58,6 +70,7 @@
           </e>
           <e p="Sale.cs" t="Include" />
           <e p="salesSystemContext.cs" t="Include" />
+          <e p="Supplier.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

@@ -9,6 +9,7 @@ namespace Sales_system.Models
     {
         public Product()
         {
+            BusinessProducts = new HashSet<BusinessProduct>();
             Concepts = new HashSet<Concept>();
         }
 
@@ -18,6 +19,7 @@ namespace Sales_system.Models
         public decimal Amount { get; set; }
         public string Description { get; set; }
 
+        public virtual ICollection<BusinessProduct> BusinessProducts { get; set; }
         public virtual ICollection<Concept> Concepts { get; set; }
     }
 }
