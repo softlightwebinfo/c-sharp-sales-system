@@ -5,21 +5,21 @@ using Microsoft.AspNetCore.Mvc;
 using Sales_system.Models;
 using Sales_system.Models.Response;
 
-namespace Sales_system.Controllers.Business
+namespace Sales_system.Controllers.Sales
 {
     [ApiController]
     [Route("[controller]")]
     [Authorize]
-    public class BusinessController : ControllerBase
+    public class SalesController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var response = new Response();
             try
             {
                 using var db = new salesSystemContext();
-                var lst = db.Businesses.ToList();
+                var lst = db.Sales.ToList();
                 response.Data = lst;
                 response.Success = true;
             }

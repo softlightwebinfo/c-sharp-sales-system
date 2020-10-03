@@ -18,7 +18,13 @@
             <e p="LoginController.cs" t="Include" />
           </e>
           <e p="Business" t="Include">
-            <e p="ReadController.cs" t="Include" />
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="BusinessProducts" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="BusinessSuppliers" t="Include">
+            <e p="GetAllController.cs" t="Include" />
           </e>
           <e p="Client" t="Include">
             <e p="CreateController.cs" t="Include" />
@@ -29,8 +35,23 @@
           <e p="Clients" t="Include">
             <e p="GetAllController.cs" t="Include" />
           </e>
+          <e p="Concepts" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="Products" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
           <e p="Sale" t="Include">
             <e p="AddController.cs" t="Include" />
+          </e>
+          <e p="Sales" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="Suppliers" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="Users" t="Include">
+            <e p="GetAllController.cs" t="Include" />
           </e>
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
