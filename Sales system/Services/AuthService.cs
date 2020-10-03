@@ -28,7 +28,7 @@ namespace Sales_system.Services
             UserResponse userResponse = new UserResponse();
             using (var db = new salesSystemContext())
             {
-                string vpassword = Encrypt.GetSHA256(model.Password);
+                string vpassword = Encrypt.GetSha256(model.Password);
                 User user = db.Users.FirstOrDefault(d => d.Email == model.Email && d.UserPassword == vpassword);
 
                 if (user == null) return null;

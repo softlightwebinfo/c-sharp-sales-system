@@ -3,16 +3,17 @@ using System.Text;
 
 namespace Sales_system.Tools
 {
-    public class Encrypt
+    public static class Encrypt
     {
-        public static string GetSHA256(string str)
+        public static string GetSha256(string str)
         {
-            SHA256 sha256 = SHA256Managed.Create();
-            ASCIIEncoding encoding = new ASCIIEncoding();
-            byte[] stream = null;
-            StringBuilder sb = new StringBuilder();
-            stream = sha256.ComputeHash(encoding.GetBytes(str));
-            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            var sha256 = SHA256.Create();
+            var encoding = new ASCIIEncoding();
+            var sb = new StringBuilder();
+            var stream = sha256.ComputeHash(encoding.GetBytes(str));
+            foreach (var t in stream)
+                sb.AppendFormat("{0:x2}", t);
+
             return sb.ToString();
         }
     }

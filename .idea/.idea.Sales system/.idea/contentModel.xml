@@ -14,8 +14,21 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="AuthController.cs" t="Include" />
-          <e p="ClientsController.cs" t="Include" />
+          <e p="Auth" t="Include">
+            <e p="LoginController.cs" t="Include" />
+          </e>
+          <e p="Client" t="Include">
+            <e p="CreateController.cs" t="Include" />
+            <e p="DeleteController.cs" t="Include" />
+            <e p="ReadController.cs" t="Include" />
+            <e p="UpdateController.cs" t="Include" />
+          </e>
+          <e p="Clients" t="Include">
+            <e p="GetAllController.cs" t="Include" />
+          </e>
+          <e p="Sale" t="Include">
+            <e p="AddController.cs" t="Include" />
+          </e>
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="docker-compose.yml" t="Include" />
@@ -24,11 +37,15 @@
         </e>
         <e p="Models" t="Include">
           <e p="Client.cs" t="Include" />
+          <e p="Common" t="Include">
+            <e p="AppSetting.cs" t="Include" />
+          </e>
           <e p="Concept.cs" t="Include" />
           <e p="Product.cs" t="Include" />
           <e p="Request" t="Include">
             <e p="AuthRequest.cs" t="Include" />
             <e p="ClientRequest.cs" t="Include" />
+            <e p="SaleRequest.cs" t="Include" />
           </e>
           <e p="Response" t="Include">
             <e p="Response.cs" t="Include" />
@@ -59,6 +76,9 @@
           <e p="Encrypt.cs" t="Include" />
         </e>
         <e p="WeatherForecast.cs" t="Include" />
+        <e p="XHR" t="Include">
+          <e p="res-api_1.http" t="Include" />
+        </e>
       </e>
       <e p="Sales system.sln" t="IncludeFlat" />
     </e>

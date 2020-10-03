@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Sales_system.Interfaces;
-using Sales_system.Models;
 using Sales_system.Models.Response;
 using Sales_system.Models.Request;
 
-namespace Sales_system.Controllers
+namespace Sales_system.Controllers.Auth
 {
     [ApiController]
     [Route("[controller]")]
     public class AuthController : ControllerBase
     {
-        private IAuthService _authService;
+        private readonly IAuthService _authService;
 
         public AuthController(IAuthService authService)
         {
