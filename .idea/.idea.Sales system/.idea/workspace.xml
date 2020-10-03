@@ -9,21 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/CreateController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/DeleteController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/ReadController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/UpdateController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Clients/GetAllController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Sale/AddController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Auth/LoginController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/ClientsController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/SaleController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sales system/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Tools/Encrypt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Tools/Encrypt.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +53,6 @@
         <option value="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/SaleController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/AuthController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/README.md" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Auth/AuthController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Auth/LoginController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Request/AuthRequest.cs" />
@@ -86,6 +73,7 @@
         <option value="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Product.cs" />
         <option value="$PROJECT_DIR$/Sales system/Tools/Encrypt.cs" />
+        <option value="$PROJECT_DIR$/Sales system/README.md" />
       </list>
     </option>
   </component>
@@ -651,8 +639,16 @@
       <workItem from="1601112541647" duration="16389000" />
       <workItem from="1601404513536" duration="208000" />
       <workItem from="1601404854599" duration="195000" />
-      <workItem from="1601751176319" duration="3268000" />
+      <workItem from="1601751176319" duration="3441000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor de código en clases y empezar a implementar patron de diseño SOLID">
+      <created>1601754560183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601754560183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,6 +700,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Refactor de código en clases y empezar a implementar patron de diseño SOLID" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor de código en clases y empezar a implementar patron de diseño SOLID" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2240" y="217" key="#Docker" timestamp="1601131628042">
@@ -852,11 +850,11 @@
     <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140310876" />
     <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601040683233" />
     <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601139627356" />
-    <state x="0" y="0" width="1680" height="1050" key="dock-window-1" timestamp="1601754433165">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1" timestamp="1601754571531">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="0" width="1680" height="1050" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601754433165" />
-    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601754421369" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601754571531" />
     <state x="2318" y="172" width="644" height="735" key="find.popup" timestamp="1601752599389">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
