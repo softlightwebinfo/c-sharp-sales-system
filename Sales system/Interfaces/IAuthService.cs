@@ -5,6 +5,6 @@ namespace Sales_system.Interfaces
 {
     public interface IAuthService
     {
-        UserResponse Auth(AuthRequest model);
+        UserResponse? Auth(AuthRequest model);
     }
 }

@@ -19,11 +19,14 @@
           </e>
           <e p="Business" t="Include">
             <e p="GetAllController.cs" t="Include" />
+            <e p="GetAllUserController.cs" t="Include" />
           </e>
           <e p="BusinessProducts" t="Include">
+            <e p="GetAllBusinessController.cs" t="Include" />
             <e p="GetAllController.cs" t="Include" />
           </e>
           <e p="BusinessSuppliers" t="Include">
+            <e p="GetAllBusinessController.cs" t="Include" />
             <e p="GetAllController.cs" t="Include" />
           </e>
           <e p="Client" t="Include">
@@ -56,6 +59,11 @@
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="docker-compose.yml" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="Business" t="Include">
+            <e p="BusinessExection.cs" t="Include" />
+          </e>
+        </e>
         <e p="Interfaces" t="Include">
           <e p="IAuthService.cs" t="Include" />
         </e>
@@ -68,6 +76,8 @@
           <e p="20201003200601_addColumnsUsers.Designer.cs" t="Include" />
           <e p="20201003204832_addTablesBussinesProductsAndSupplier.cs" t="Include" />
           <e p="20201003204832_addTablesBussinesProductsAndSupplier.Designer.cs" t="Include" />
+          <e p="20201003221753_addTablesSupplierProducts.cs" t="Include" />
+          <e p="20201003221753_addTablesSupplierProducts.Designer.cs" t="Include" />
           <e p="salesSystemContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -92,6 +102,7 @@
           <e p="Sale.cs" t="Include" />
           <e p="salesSystemContext.cs" t="Include" />
           <e p="Supplier.cs" t="Include" />
+          <e p="SuppliersProduct.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

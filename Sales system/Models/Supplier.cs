@@ -10,6 +10,7 @@ namespace Sales_system.Models
         public Supplier()
         {
             BusinessSuppliers = new HashSet<BusinessSupplier>();
+            SuppliersProducts = new HashSet<SuppliersProduct>();
         }
 
         public long Id { get; set; }
@@ -22,5 +23,6 @@ namespace Sales_system.Models
 
         public virtual User FkUser { get; set; }
         public virtual ICollection<BusinessSupplier> BusinessSuppliers { get; set; }
+        public virtual ICollection<SuppliersProduct> SuppliersProducts { get; set; }
     }
 }

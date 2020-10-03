@@ -2,27 +2,34 @@
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Sales_system.Exceptions.Business;
 using Sales_system.Models;
 using Sales_system.Models.Response;
 
-namespace Sales_system.Controllers.BusinessProducts
+namespace Sales_system.Controllers.Business
 {
     [ApiController]
-    [Route("business/products/[controller]")]
+    [Route("business/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class GetAllUser : ControllerBase
     {
         [HttpGet]
-        
-        public IActionResult Get()
+        [Route("{user}")]
+        public IActionResult Get(int user)
         {
             var response = new Response();
             try
             {
                 using var db = new salesSystemContext();
-                var lst = db.BusinessProducts.ToList();
+                var lst = db.Businesses.Where(e => e.FkUserId == user).ToList();
+                if (lst.Count == 0) throw new BusinessExection("No se ha encontrado ninguna empresa asociada a este usuario");
                 response.Data = lst;
                 response.Success = true;
+            }
+            catch (BusinessExection exception)
+            {
+                Console.WriteLine(exception);
+                response.Message = exception.Message;
             }
             catch (Exception exception)
             {

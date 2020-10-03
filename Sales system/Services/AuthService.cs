@@ -23,18 +23,16 @@ namespace Sales_system.Services
             _appSetting = appSetting.Value;
         }
 
-        public UserResponse Auth(AuthRequest model)
+        public UserResponse? Auth(AuthRequest model)
         {
             UserResponse userResponse = new UserResponse();
-            using (var db = new salesSystemContext())
-            {
-                string vpassword = Encrypt.GetSha256(model.Password);
-                User user = db.Users.FirstOrDefault(d => d.Email == model.Email && d.UserPassword == vpassword);
+            using var db = new salesSystemContext();
+            string vpassword = Encrypt.GetSha256(model.Password);
+            User user = db.Users.FirstOrDefault(d => d.Email == model.Email && d.UserPassword == vpassword);
 
-                if (user == null) return null;
-                userResponse.Email = user.Email;
-                userResponse.Token = GetToken(user);
-            }
+            if (user == null) return null;
+            userResponse.Email = user.Email;
+            userResponse.Token = GetToken(user);
 
             return userResponse;
         }
@@ -46,7 +44,7 @@ namespace Sales_system.Services
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(
-                    new Claim[]
+                    new[]
                     {
                         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                         new Claim(ClaimTypes.Email, user.Email),

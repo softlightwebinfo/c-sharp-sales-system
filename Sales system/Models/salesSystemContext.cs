@@ -25,6 +25,7 @@ namespace Sales_system.Models
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Sale> Sales { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
+        public virtual DbSet<SuppliersProduct> SuppliersProducts { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -271,6 +272,32 @@ namespace Sales_system.Models
                     .HasForeignKey(d => d.FkUserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("suppliers_users_id_fk");
+            });
+
+            modelBuilder.Entity<SuppliersProduct>(entity =>
+            {
+                entity.HasKey(e => new { e.FkSupplierId, e.FkProductId })
+                    .HasName("suppliers_products_pk");
+
+                entity.ToTable("suppliers_products");
+
+                entity.HasIndex(e => new { e.FkSupplierId, e.FkProductId }, "suppliers_products_fk_supplier_id_fk_product_id_index");
+
+                entity.Property(e => e.FkSupplierId)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("fk_supplier_id");
+
+                entity.Property(e => e.FkProductId).HasColumnName("fk_product_id");
+
+                entity.HasOne(d => d.FkProduct)
+                    .WithMany(p => p.SuppliersProducts)
+                    .HasForeignKey(d => d.FkProductId)
+                    .HasConstraintName("suppliers_products_products_id_fk");
+
+                entity.HasOne(d => d.FkSupplier)
+                    .WithMany(p => p.SuppliersProducts)
+                    .HasForeignKey(d => d.FkSupplierId)
+                    .HasConstraintName("suppliers_products_suppliers_id_fk");
             });
 
             modelBuilder.Entity<User>(entity =>

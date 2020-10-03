@@ -11,6 +11,7 @@ namespace Sales_system.Models
         {
             BusinessProducts = new HashSet<BusinessProduct>();
             Concepts = new HashSet<Concept>();
+            SuppliersProducts = new HashSet<SuppliersProduct>();
         }
 
         public int Id { get; set; }
@@ -21,5 +22,6 @@ namespace Sales_system.Models
 
         public virtual ICollection<BusinessProduct> BusinessProducts { get; set; }
         public virtual ICollection<Concept> Concepts { get; set; }
+        public virtual ICollection<SuppliersProduct> SuppliersProducts { get; set; }
     }
 }

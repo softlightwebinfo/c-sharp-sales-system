@@ -8,7 +8,7 @@ using Sales_system.Models.Response;
 namespace Sales_system.Controllers.Business
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("business/[controller]")]
     [Authorize]
     public class GetAllController : ControllerBase
     {
