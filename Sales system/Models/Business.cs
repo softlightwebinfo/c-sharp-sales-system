@@ -18,6 +18,7 @@ namespace Sales_system.Models
         public string Address { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
         public virtual User FkUser { get; set; }
         public virtual BusinessSupplier BusinessSupplier { get; set; }

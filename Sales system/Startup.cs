@@ -56,6 +56,7 @@ namespace Sales_system
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IBusinessService, BusinessPublishService>();
             services.AddScoped<IBusinessUpdateService, BusinessUpdateService>();
+            services.AddScoped<IBusinessDeleteService, BusinessDeleteService>();
             services.AddScoped<IBusinessRepository, BusinessRepository>();
         }
 

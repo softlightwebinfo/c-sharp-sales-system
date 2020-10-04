@@ -1,7 +1,7 @@
 namespace Sales_system.Interfaces
 {
-    public interface IRemovable
+    public interface IRemovable<in TRemoveId>
     {
-        void Remove(int id);
+        void Remove(TRemoveId id);
     }
 }

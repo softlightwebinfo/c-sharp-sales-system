@@ -16,9 +16,12 @@ namespace Sales_system.Repository.Business
             throw new System.NotImplementedException();
         }
 
-        public void Remove(int id)
+        public void Remove(long id)
         {
-            throw new System.NotImplementedException();
+            using var db = new salesSystemContext();
+            var business = db.Businesses.Find(id);
+            db.Entry(business).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            db.SaveChanges();
         }
 
         public void Update(BusinessUpdateRequest model)

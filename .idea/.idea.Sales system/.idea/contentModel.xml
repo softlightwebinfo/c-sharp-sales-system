@@ -18,6 +18,7 @@
             <e p="LoginController.cs" t="Include" />
           </e>
           <e p="Business" t="Include">
+            <e p="DeleteController.cs" t="Include" />
             <e p="GetAllController.cs" t="Include" />
             <e p="GetAllUserController.cs" t="Include" />
             <e p="PublishController.cs" t="Include" />
@@ -78,6 +79,7 @@
           </e>
           <e p="Services" t="Include">
             <e p="Business" t="Include">
+              <e p="IBusinessDeleteService.cs" t="Include" />
               <e p="IBusinessService.cs" t="Include" />
               <e p="IBusinessUpdateService.cs" t="Include" />
             </e>
@@ -94,6 +96,8 @@
           <e p="20201003204832_addTablesBussinesProductsAndSupplier.Designer.cs" t="Include" />
           <e p="20201003221753_addTablesSupplierProducts.cs" t="Include" />
           <e p="20201003221753_addTablesSupplierProducts.Designer.cs" t="Include" />
+          <e p="20201004094521_AddColumnBusiness.cs" t="Include" />
+          <e p="20201004094521_AddColumnBusiness.Designer.cs" t="Include" />
           <e p="salesSystemContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -147,6 +151,7 @@
         <e p="Services" t="Include">
           <e p="AuthService.cs" t="Include" />
           <e p="Business" t="Include">
+            <e p="BusinessDeleteService.cs" t="Include" />
             <e p="BusinessPublishService.cs" t="Include" />
             <e p="BusinessUpdateService.cs" t="Include" />
           </e>

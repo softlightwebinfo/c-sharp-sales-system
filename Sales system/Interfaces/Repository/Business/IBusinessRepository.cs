@@ -4,7 +4,7 @@ namespace Sales_system.Interfaces.Repository.Business
 {
     public interface IBusinessRepository : IWriteable<BusinessCreateRequest, BusinessUpdateRequest>,
         IReadable,
-        IRemovable
+        IRemovable<long>
     {
     }
 }
