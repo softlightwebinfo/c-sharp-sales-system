@@ -20,6 +20,8 @@
           <e p="Business" t="Include">
             <e p="GetAllController.cs" t="Include" />
             <e p="GetAllUserController.cs" t="Include" />
+            <e p="PublishController.cs" t="Include" />
+            <e p="UpdateController.cs" t="Include" />
           </e>
           <e p="BusinessProducts" t="Include">
             <e p="GetAllBusinessController.cs" t="Include" />
@@ -66,6 +68,20 @@
         </e>
         <e p="Interfaces" t="Include">
           <e p="IAuthService.cs" t="Include" />
+          <e p="IReadable.cs" t="Include" />
+          <e p="IRemovable.cs" t="Include" />
+          <e p="IWriteable.cs" t="Include" />
+          <e p="Repository" t="Include">
+            <e p="Business" t="Include">
+              <e p="IBusinessRepository.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Services" t="Include">
+            <e p="Business" t="Include">
+              <e p="IBusinessService.cs" t="Include" />
+              <e p="IBusinessUpdateService.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Migrations" t="Include">
           <e p="20201003194639_InitialCreate.cs" t="Include" />
@@ -92,10 +108,15 @@
           <e p="Product.cs" t="Include" />
           <e p="Request" t="Include">
             <e p="AuthRequest.cs" t="Include" />
+            <e p="Business" t="Include">
+              <e p="BusinessCreateRequest.cs" t="Include" />
+              <e p="BusinessUpdateRequest.cs" t="Include" />
+            </e>
             <e p="ClientRequest.cs" t="Include" />
             <e p="SaleRequest.cs" t="Include" />
           </e>
           <e p="Response" t="Include">
+            <e p="BusinessPublishResponse.cs" t="Include" />
             <e p="Response.cs" t="Include" />
             <e p="UserResponse.cs" t="Include" />
           </e>
@@ -117,9 +138,18 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="README.md" t="Include" />
+        <e p="Repository" t="Include">
+          <e p="Business" t="Include">
+            <e p="BusinessRepository.cs" t="Include" />
+          </e>
+        </e>
         <e p="Sales system.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
           <e p="AuthService.cs" t="Include" />
+          <e p="Business" t="Include">
+            <e p="BusinessPublishService.cs" t="Include" />
+            <e p="BusinessUpdateService.cs" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Tools" t="Include">

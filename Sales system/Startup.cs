@@ -7,8 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Sales_system.Interfaces;
+using Sales_system.Interfaces.Repository.Business;
+using Sales_system.Interfaces.Services.Business;
 using Sales_system.Models.Common;
+using Sales_system.Repository.Business;
 using Sales_system.Services;
+using Sales_system.Services.Business;
 
 namespace Sales_system
 {
@@ -50,6 +54,9 @@ namespace Sales_system
                 });
 
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IBusinessService, BusinessPublishService>();
+            services.AddScoped<IBusinessUpdateService, BusinessUpdateService>();
+            services.AddScoped<IBusinessRepository, BusinessRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +70,7 @@ namespace Sales_system
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            
+
             app.UseAuthentication();
             app.UseAuthorization();
 

@@ -120,3 +120,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZ
 GET https://localhost:5001/business/2/suppliers
 Accept: */*
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+
+###
+POST https://localhost:5001/business/publish
+Accept: */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+Content-Type: application/json
+
+{
+  "businessName": "Ejemplo",
+  "address": "Direccion de ejemplo",
+  "fkUserId": 1
+}
+
+###
+PUT https://localhost:5001/business/7/update
+Accept: */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+Content-Type: application/json
+
+{
+  "id": 7,
+  "businessName": "Ejemplo update 2",
+  "address": "Direccion de ejemplo update, Funciona"
+}
