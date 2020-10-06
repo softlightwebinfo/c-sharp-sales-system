@@ -54,7 +54,11 @@
             <e p="GetAllController.cs" t="Include" />
           </e>
           <e p="Suppliers" t="Include">
+            <e p="CreateController.cs" t="Include" />
+            <e p="DeleteController.cs" t="Include" />
             <e p="GetAllController.cs" t="Include" />
+            <e p="GetController.cs" t="Include" />
+            <e p="UpdateController.cs" t="Include" />
           </e>
           <e p="Users" t="Include">
             <e p="GetAllController.cs" t="Include" />
@@ -76,12 +80,22 @@
             <e p="Business" t="Include">
               <e p="IBusinessRepository.cs" t="Include" />
             </e>
+            <e p="Suppliers" t="Include">
+              <e p="ISuppliersRepository.cs" t="Include" />
+            </e>
           </e>
           <e p="Services" t="Include">
             <e p="Business" t="Include">
               <e p="IBusinessDeleteService.cs" t="Include" />
               <e p="IBusinessService.cs" t="Include" />
               <e p="IBusinessUpdateService.cs" t="Include" />
+            </e>
+            <e p="Suppliers" t="Include">
+              <e p="ISuppliersDeleteService.cs" t="Include" />
+              <e p="ISuppliersGetAllService.cs" t="Include" />
+              <e p="ISuppliersGetService.cs" t="Include" />
+              <e p="ISuppliersService.cs" t="Include" />
+              <e p="ISuppliersUpdateService.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -98,6 +112,8 @@
           <e p="20201003221753_addTablesSupplierProducts.Designer.cs" t="Include" />
           <e p="20201004094521_AddColumnBusiness.cs" t="Include" />
           <e p="20201004094521_AddColumnBusiness.Designer.cs" t="Include" />
+          <e p="20201006184755_DeleteColumnSupplier.cs" t="Include" />
+          <e p="20201006184755_DeleteColumnSupplier.Designer.cs" t="Include" />
           <e p="salesSystemContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -118,6 +134,10 @@
             </e>
             <e p="ClientRequest.cs" t="Include" />
             <e p="SaleRequest.cs" t="Include" />
+            <e p="Suppliers" t="Include">
+              <e p="SuppliersCreateRequest.cs" t="Include" />
+              <e p="SuppliersUpdateRequest.cs" t="Include" />
+            </e>
           </e>
           <e p="Response" t="Include">
             <e p="BusinessPublishResponse.cs" t="Include" />
@@ -146,6 +166,9 @@
           <e p="Business" t="Include">
             <e p="BusinessRepository.cs" t="Include" />
           </e>
+          <e p="Suppliers" t="Include">
+            <e p="SuppliersRepository.cs" t="Include" />
+          </e>
         </e>
         <e p="Sales system.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
@@ -155,6 +178,13 @@
             <e p="BusinessPublishService.cs" t="Include" />
             <e p="BusinessUpdateService.cs" t="Include" />
           </e>
+          <e p="Suppliers" t="Include">
+            <e p="SuppliersDeleteService.cs" t="Include" />
+            <e p="SuppliersGetAllService.cs" t="Include" />
+            <e p="SuppliersGetService.cs" t="Include" />
+            <e p="SuppliersPublishService.cs" t="Include" />
+            <e p="SuppliersUpdateService.cs" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Tools" t="Include">
@@ -163,6 +193,7 @@
         <e p="WeatherForecast.cs" t="Include" />
         <e p="XHR" t="Include">
           <e p="res-api_1.http" t="Include" />
+          <e p="supplier.http" t="Include" />
         </e>
       </e>
       <e p="Sales system.sln" t="IncludeFlat" />

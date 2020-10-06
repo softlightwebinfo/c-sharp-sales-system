@@ -1,31 +1,31 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Sales_system.Interfaces.Services.Business;
-using Sales_system.Models.Request.Business;
+using Sales_system.Interfaces.Services.Suppliers;
+using Sales_system.Models.Request.Suppliers;
 using Sales_system.Models.Response;
 
-namespace Sales_system.Controllers.Business
+namespace Sales_system.Controllers.Suppliers
 {
     [ApiController]
-    [Route("business/{id}/[controller]")]
+    [Route("suppliers/{id}/[controller]")]
     [Authorize]
     public class UpdateController : ControllerBase
     {
-        private readonly IBusinessUpdateService _businessService;
+        private readonly ISuppliersUpdateService _suppliersUpdateService;
 
-        public UpdateController(IBusinessUpdateService businessService)
+        public UpdateController(ISuppliersUpdateService suppliersUpdateService)
         {
-            _businessService = businessService;
+            _suppliersUpdateService = suppliersUpdateService;
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] BusinessUpdateRequest businessBusinessUpdateRequest)
+        public IActionResult Put([FromBody] SuppliersUpdateRequest suppliersUpdateRequest)
         {
             var response = new Response();
             try
             {
-                _businessService.Update(businessBusinessUpdateRequest);
+                _suppliersUpdateService.Update(suppliersUpdateRequest);
                 response.Success = true;
                 response.Message = "Se ha modificado correctamente";
             }

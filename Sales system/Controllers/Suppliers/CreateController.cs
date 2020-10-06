@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sales_system.Interfaces.Services.Suppliers;
+using Sales_system.Models.Request.Suppliers;
 using Sales_system.Models.Response;
 
 namespace Sales_system.Controllers.Suppliers
@@ -9,22 +10,24 @@ namespace Sales_system.Controllers.Suppliers
     [ApiController]
     [Route("suppliers/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class CreateController : ControllerBase
     {
-        private readonly ISuppliersGetAllService _getAllService;
+        private readonly ISuppliersService _suppliersService;
 
-        public GetAllController(ISuppliersGetAllService getAllService)
+        public CreateController(ISuppliersService suppliersService)
         {
-            _getAllService = getAllService;
+            _suppliersService = suppliersService;
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+        [HttpPost]
+        public IActionResult Post(SuppliersCreateRequest request)
         {
             var response = new Response();
             try
             {
-                response.Data = _getAllService.GetAll();
+                _suppliersService.PublishNew(request);
+                response.Message = "Se ha creado el proveedor correctamente";
+                response.Success = true;
             }
             catch (Exception exception)
             {

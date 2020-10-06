@@ -9,14 +9,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Business/DeleteController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessDeleteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Business/BusinessDeleteService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/CreateController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/DeleteController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/UpdateController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Repository/Suppliers/ISuppliersRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersDeleteService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersGetAllService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersGetService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersUpdateService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/SuppliersCreateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/SuppliersUpdateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Repository/Suppliers/SuppliersRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersDeleteService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersGetAllService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersGetService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersPublishService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersUpdateService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/XHR/supplier.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Interfaces/IRemovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Interfaces/IRemovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Business/PublishController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Business/PublishController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Business/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Business/UpdateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetAllController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetAllController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Interfaces/IReadable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Interfaces/IReadable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sales system/Interfaces/Repository/Business/IBusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Interfaces/Repository/Business/IBusinessRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/Supplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Supplier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sales system/Repository/Business/BusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Repository/Business/BusinessRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Services/Business/BusinessDeleteService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Services/Business/BusinessDeleteService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Services/Business/BusinessPublishService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Services/Business/BusinessPublishService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sales system/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,57 +61,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sales system/README.md" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Common/AppSetting.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Bussiness/ReadController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Business.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/ReadController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Products/ReadController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Sale/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Sales/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Users/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Concepts/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/ReadController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/Sales system/Exeptions/Business/BusinessGetAllExeption.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Exceptions/Business/BusinessGetAllException.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Exceptions/Business/BusinessExection.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/GetAllUserController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessProducts/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessProducts/GetAllUserController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessProducts/GetAllBusinessController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/GetAllBusinessController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Services/AuthService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/IAuthService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Response/UserResponse.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Response/BusinessPublishResponse.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Request/BusinessRequest.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/IReadable.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Services/BusinessService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/IRepository.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Services/BusinessPublishService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/Repository/Business/IBusinessUpdateService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Request/BusinessCreateRequest.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/PublishController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/IBusinessService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessUpdateService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Interfaces/IWriteable.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Services/Business/BusinessUpdateService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/BusinessCreateRequest.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Services/Business/BusinessPublishService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/BusinessUpdateRequest.cs" />
         <option value="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/UpdateController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Business/DeleteController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessDeleteService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Startup.cs" />
         <option value="$PROJECT_DIR$/Sales system/Interfaces/IRemovable.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/Repository/Business/IBusinessRepository.cs" />
+        <option value="$PROJECT_DIR$/Sales system/README.md" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/SupplierCreateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/CreateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/UpdateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessUpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/PublishController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Business/UpdateController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersDeleteService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersUpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Business/UpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Business/PublishService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/DeleteService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/UpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/CreateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/UpdateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Business/DeleteService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/PublishService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Business/BusinessPublishService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Business/BusinessUpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersDeleteService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersPublishService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Services/Business/BusinessDeleteService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/BusinessCreateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Business/BusinessUpdateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/SuppliersCreateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Request/Suppliers/SuppliersUpdateRequest.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/CreateController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersUpdateService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/UpdateController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersGetAllService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Repository/Suppliers/SuppliersGetAllService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersGetAllService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/IReadable.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Repository/Suppliers/ISuppliersRepository.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Repository/Business/IBusinessRepository.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Suppliers/ISuppliersGetService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/Suppliers/SuppliersGetService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Startup.cs" />
         <option value="$PROJECT_DIR$/Sales system/Repository/Business/BusinessRepository.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/DeleteController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetAllController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/XHR/supplier.http" />
+        <option value="$PROJECT_DIR$/Sales system/Repository/Suppliers/SuppliersRepository.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +139,355 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/get-all" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppliers" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/2/delete" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/2/get" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/1/get" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/3/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 3,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 2 update 1&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/3/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 2 update 1&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3 update 2&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3 update 1&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3 update&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/suppl" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;supplierName&quot;: &quot;Ejemplo 2&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://localhost:5001/suppliers/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;supplierName&quot;: &quot;Ejemplo&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="PUT" />
           <option name="urlBase" value="https://localhost:5001/business/7/update" />
@@ -456,25 +830,6 @@
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="https://localhost:5001/sales" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://localhost:5001/suppliers" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -844,156 +1199,23 @@
           <option name="textToSend" value="PUT https://localhost:5001/clients&#10;Content-Type: application/json&#10;&#10;{&#10;  &quot;id&quot;: 6,&#10;  &quot;name&quot;: &quot;Samy AS&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="https://localhost:5001/clients" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 6,&#10;  &quot;name&quot;: &quot;Samy AS&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:5001/clients" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Emprendimos&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:5001/clients" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://localhost:5001/weatherforecast" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://httpbin.org/anything" />
-          <option name="urlPath" value="" />
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="a4b625f0-0007-4086-9197-1c6fb6d08f7b" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="ts" />
-                <option name="value" value="1601042716" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://httpbin.org/status/301" />
-          <option name="urlPath" value="" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://httpbin.org/get" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="show_env" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://httpbin.org/ip" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sales system: Sales_system">
-    <configuration name="res-api_1#12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="12" runType="Run single request">
+    <configuration name="supplier#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/supplier.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="res-api_1#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="13" runType="Run single request">
+    <configuration name="supplier#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/supplier.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="res-api_1#14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="14" runType="Run single request">
+    <configuration name="supplier#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/supplier.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="res-api_1#15" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="15" runType="Run single request">
+    <configuration name="supplier#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/supplier.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="res-api_1#16" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" index="16" runType="Run single request">
+    <configuration name="supplier#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/supplier.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Sales system: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -1029,19 +1251,19 @@
     <list>
       <item itemvalue=".NET Launch Settings Profile.Sales system: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.Sales system: Sales_system" />
-      <item itemvalue="HTTP Request.res-api_1#12" />
-      <item itemvalue="HTTP Request.res-api_1#13" />
-      <item itemvalue="HTTP Request.res-api_1#14" />
-      <item itemvalue="HTTP Request.res-api_1#15" />
-      <item itemvalue="HTTP Request.res-api_1#16" />
+      <item itemvalue="HTTP Request.supplier#1" />
+      <item itemvalue="HTTP Request.supplier#2" />
+      <item itemvalue="HTTP Request.supplier#3" />
+      <item itemvalue="HTTP Request.supplier#4" />
+      <item itemvalue="HTTP Request.supplier#5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.res-api_1#16" />
-        <item itemvalue="HTTP Request.res-api_1#15" />
-        <item itemvalue="HTTP Request.res-api_1#14" />
-        <item itemvalue="HTTP Request.res-api_1#13" />
-        <item itemvalue="HTTP Request.res-api_1#12" />
+        <item itemvalue="HTTP Request.supplier#1" />
+        <item itemvalue="HTTP Request.supplier#5" />
+        <item itemvalue="HTTP Request.supplier#4" />
+        <item itemvalue="HTTP Request.supplier#3" />
+        <item itemvalue="HTTP Request.supplier#2" />
       </list>
     </recent_temporary>
   </component>
@@ -1060,7 +1282,8 @@
       <workItem from="1601404854599" duration="195000" />
       <workItem from="1601751176319" duration="12197000" />
       <workItem from="1601798532260" duration="5468000" />
-      <workItem from="1601804032551" duration="631000" />
+      <workItem from="1601804032551" duration="854000" />
+      <workItem from="1602002325714" duration="7628000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor de código en clases y empezar a implementar patron de diseño SOLID">
       <created>1601754560183</created>
@@ -1104,7 +1327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601803929925</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="LIbs">
+      <created>1601825773262</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601825773262</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1161,7 +1391,8 @@
     <MESSAGE value="Añadir GetAll en las tablas que faltaban" />
     <MESSAGE value="Añadir GetAll eTables" />
     <MESSAGE value="Se ha modificado servicios y se ha creado un repositorio para las consultas a base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se ha modificado servicios y se ha creado un repositorio para las consultas a base de datos" />
+    <MESSAGE value="LIbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="LIbs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2240" y="217" key="#Docker" timestamp="1601131628042">
@@ -1187,34 +1418,38 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2498" y="415" key="DockerComposeFileDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131603011" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1601803866526">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1602010321439">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803866526" />
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433181" />
     <state width="1878" height="403" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045491" />
+    <state width="1680" height="935" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602004914762" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567583" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803790358" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1601803866519">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010321439" />
+    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1602010321437">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803866519" />
+    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433179" />
     <state width="1878" height="403" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045489" />
+    <state width="1680" height="935" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602004914759" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567580" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803790356" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1601803866514">
+    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010321437" />
+    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1602010321436">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803866514" />
+    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433178" />
     <state width="1878" height="403" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045487" />
+    <state width="1680" height="935" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602004914758" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567578" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803790354" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1601803866521">
+    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010321436" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1602010321438">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803866521" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433180" />
     <state width="1878" height="403" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045490" />
+    <state width="1680" height="935" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602004914761" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567581" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803790357" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010321438" />
     <state width="1878" height="403" key="GridCell.Tab.1.bottom" timestamp="1601801956932">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -1307,32 +1542,32 @@
     </state>
     <state width="1878" height="403" key="GridCell.Tab.4.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933359" />
     <state width="1878" height="403" key="GridCell.Tab.4.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601801956950" />
-    <state width="278" height="468" key="HiddenNamespacesPopup" timestamp="1601131980016">
+    <state width="278" height="468" key="HiddenNamespacesPopup" timestamp="1602003270288">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="243" height="455" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038853503" />
-    <state width="278" height="468" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131980016" />
+    <state width="278" height="468" key="HiddenNamespacesPopup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602003270288" />
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size" timestamp="1601038144105">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038144105" />
-    <state x="2330" y="225" key="RiderGenerateDialog" timestamp="1601803577402">
+    <state x="2330" y="225" key="RiderGenerateDialog" timestamp="1602009697932">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2330" y="225" key="RiderGenerateDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803577402" />
+    <state x="2330" y="225" key="RiderGenerateDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602009697932" />
     <state x="2149" y="179" key="SettingsEditor" timestamp="1601804008475">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2149" y="179" key="SettingsEditor/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601804008475" />
-    <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog" timestamp="1601134953409">
+    <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog" timestamp="1602009041734">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601134953409" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1601803937198">
+    <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602009041734" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1601825777204">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803937198" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601763535070" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601825777204" />
     <state x="2422" y="326" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601131894922">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -1351,29 +1586,34 @@
     </state>
     <state x="610" y="352" width="460" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601039489231" />
     <state x="2377" y="362" width="428" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601755035375" />
-    <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601804607767">
+    <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602010016187">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2482" y="206" width="568" height="572" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140310876" />
     <state x="2482" y="206" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1601804607767" />
     <state x="702" y="200" width="511" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601040683233" />
-    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601763290747" />
-    <state x="0" y="-22" width="1680" height="1072" maximized="true" key="dock-window-1" timestamp="1601804362376">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601798831809" />
-    <state x="0" y="0" width="1680" height="1050" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601754433165" />
-    <state x="0" y="-22" width="1680" height="1072" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601804362376" />
-    <state x="2318" y="172" width="644" height="735" key="find.popup" timestamp="1601752599389">
+    <state x="2482" y="206" width="547" height="650" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010016187" />
+    <state x="2453" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602007829074">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2318" y="172" width="644" height="735" key="find.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601752599389" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1601804401194">
+    <state x="2453" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602007829074" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1" timestamp="1602010315565">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602005824074" />
+    <state x="0" y="0" width="1680" height="1050" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601754433165" />
+    <state x="0" y="0" width="1680" height="1050" key="dock-window-1/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602004106764" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602010315565" />
+    <state x="2318" y="172" width="644" height="735" key="find.popup" timestamp="1602007764079">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2318" y="172" width="644" height="735" key="find.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602007764079" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602007685109">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601799561151" />
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140256619" />
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1601112805342" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601804401194" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602007685109" />
   </component>
 </project>

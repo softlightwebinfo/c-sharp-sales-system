@@ -7,24 +7,26 @@ using Sales_system.Models.Response;
 namespace Sales_system.Controllers.Suppliers
 {
     [ApiController]
-    [Route("suppliers/[controller]")]
+    [Route("suppliers/{id}/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class DeleteController : ControllerBase
     {
-        private readonly ISuppliersGetAllService _getAllService;
+        private readonly ISuppliersDeleteService _suppliersDeleteService;
 
-        public GetAllController(ISuppliersGetAllService getAllService)
+        public DeleteController(ISuppliersDeleteService suppliersDeleteService)
         {
-            _getAllService = getAllService;
+            _suppliersDeleteService = suppliersDeleteService;
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+        [HttpDelete]
+        public IActionResult Delete(int id)
         {
             var response = new Response();
             try
             {
-                response.Data = _getAllService.GetAll();
+                _suppliersDeleteService.Delete(id);
+                response.Success = true;
+                response.Message = "Se ha eliminado correctamente";
             }
             catch (Exception exception)
             {

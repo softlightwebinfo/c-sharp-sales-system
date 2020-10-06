@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Sales_system.Interfaces.Repository.Business;
 using Sales_system.Models;
 using Sales_system.Models.Request.Business;
@@ -6,12 +8,12 @@ namespace Sales_system.Repository.Business
 {
     public class BusinessRepository : IBusinessRepository
     {
-        public void Get(int id)
+        public Models.Business Get(long id)
         {
             throw new System.NotImplementedException();
         }
 
-        public void GetAll()
+        public List<Models.Business> GetAll()
         {
             throw new System.NotImplementedException();
         }
@@ -20,6 +22,7 @@ namespace Sales_system.Repository.Business
         {
             using var db = new salesSystemContext();
             var business = db.Businesses.Find(id);
+            business.DeletedAt = DateTime.Now;
             db.Entry(business).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.SaveChanges();
         }

@@ -8,11 +8,15 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Sales_system.Interfaces;
 using Sales_system.Interfaces.Repository.Business;
+using Sales_system.Interfaces.Repository.Suppliers;
 using Sales_system.Interfaces.Services.Business;
+using Sales_system.Interfaces.Services.Suppliers;
 using Sales_system.Models.Common;
 using Sales_system.Repository.Business;
+using Sales_system.Repository.Suppliers;
 using Sales_system.Services;
 using Sales_system.Services.Business;
+using Sales_system.Services.Suppliers;
 
 namespace Sales_system
 {
@@ -54,10 +58,21 @@ namespace Sales_system
                 });
 
             services.AddScoped<IAuthService, AuthService>();
+            // Business Injection Services
             services.AddScoped<IBusinessService, BusinessPublishService>();
             services.AddScoped<IBusinessUpdateService, BusinessUpdateService>();
             services.AddScoped<IBusinessDeleteService, BusinessDeleteService>();
+            
+            // Suppliers Injection Services
+            services.AddScoped<ISuppliersService, SuppliersPublishService>();
+            services.AddScoped<ISuppliersUpdateService, SuppliersUpdateService>();
+            services.AddScoped<ISuppliersGetAllService, SuppliersGetAllService>();
+            services.AddScoped<ISuppliersGetService, SuppliersGetService>();
+            services.AddScoped<ISuppliersDeleteService, SuppliersDeleteService>();
+            
+            // Repositories
             services.AddScoped<IBusinessRepository, BusinessRepository>();
+            services.AddScoped<ISuppliersRepository, SuppliersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

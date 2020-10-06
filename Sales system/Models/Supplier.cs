@@ -20,6 +20,7 @@ namespace Sales_system.Models
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public long FkUserId { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
         public virtual User FkUser { get; set; }
         public virtual ICollection<BusinessSupplier> BusinessSuppliers { get; set; }

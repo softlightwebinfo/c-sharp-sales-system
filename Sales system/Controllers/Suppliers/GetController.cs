@@ -7,24 +7,25 @@ using Sales_system.Models.Response;
 namespace Sales_system.Controllers.Suppliers
 {
     [ApiController]
-    [Route("suppliers/[controller]")]
+    [Route("suppliers/{id}/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class GetController : ControllerBase
     {
-        private readonly ISuppliersGetAllService _getAllService;
+        private readonly ISuppliersGetService _getService;
 
-        public GetAllController(ISuppliersGetAllService getAllService)
+        public GetController(ISuppliersGetService getService)
         {
-            _getAllService = getAllService;
+            _getService = getService;
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult Get(long id)
         {
             var response = new Response();
             try
             {
-                response.Data = _getAllService.GetAll();
+                response.Data = _getService.Get(id);
+                response.Success = true;
             }
             catch (Exception exception)
             {

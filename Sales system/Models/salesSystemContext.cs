@@ -250,6 +250,11 @@ namespace Sales_system.Models
                     .HasDefaultValueSql("now()")
                     .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
 
+                entity.Property(e => e.DeletedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("deleted_at")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
                 entity.Property(e => e.Email)
                     .HasMaxLength(150)
                     .HasColumnName("email");
