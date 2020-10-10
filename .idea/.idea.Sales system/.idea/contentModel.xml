@@ -84,6 +84,9 @@
             <e p="Business" t="Include">
               <e p="IBusinessRepository.cs" t="Include" />
             </e>
+            <e p="Client" t="Include">
+              <e p="IClientRepository.cs" t="Include" />
+            </e>
             <e p="Product" t="Include">
               <e p="IProductRepository.cs" t="Include" />
             </e>
@@ -96,6 +99,13 @@
               <e p="IBusinessDeleteService.cs" t="Include" />
               <e p="IBusinessService.cs" t="Include" />
               <e p="IBusinessUpdateService.cs" t="Include" />
+            </e>
+            <e p="Client" t="Include">
+              <e p="IClientDeleteService.cs" t="Include" />
+              <e p="IClientGetAllService.cs" t="Include" />
+              <e p="IClientGetService.cs" t="Include" />
+              <e p="IClientService.cs" t="Include" />
+              <e p="IClientUpdateService.cs" t="Include" />
             </e>
             <e p="Product" t="Include">
               <e p="IProductDeleteService.cs" t="Include" />
@@ -132,6 +142,10 @@
           <e p="20201010112400_AddColumnsProduct.Designer.cs" t="Include" />
           <e p="20201010113414_ModifyTypeProductId.cs" t="Include" />
           <e p="20201010113414_ModifyTypeProductId.Designer.cs" t="Include" />
+          <e p="20201010135342_ModifyIdClient.cs" t="Include" />
+          <e p="20201010135342_ModifyIdClient.Designer.cs" t="Include" />
+          <e p="20201010141052_ModifyColumnsDateClient.cs" t="Include" />
+          <e p="20201010141052_ModifyColumnsDateClient.Designer.cs" t="Include" />
           <e p="salesSystemContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -149,6 +163,10 @@
             <e p="Business" t="Include">
               <e p="BusinessCreateRequest.cs" t="Include" />
               <e p="BusinessUpdateRequest.cs" t="Include" />
+            </e>
+            <e p="Client" t="Include">
+              <e p="ClientCreateRequest.cs" t="Include" />
+              <e p="ClientUpdateRequest.cs" t="Include" />
             </e>
             <e p="ClientRequest.cs" t="Include" />
             <e p="Product" t="Include">
@@ -188,6 +206,9 @@
           <e p="Business" t="Include">
             <e p="BusinessRepository.cs" t="Include" />
           </e>
+          <e p="Client" t="Include">
+            <e p="ClientRepository.cs" t="Include" />
+          </e>
           <e p="Product" t="Include">
             <e p="ProductRepository.cs" t="Include" />
           </e>
@@ -202,6 +223,13 @@
             <e p="BusinessDeleteService.cs" t="Include" />
             <e p="BusinessPublishService.cs" t="Include" />
             <e p="BusinessUpdateService.cs" t="Include" />
+          </e>
+          <e p="Client" t="Include">
+            <e p="ClientDeleteService.cs" t="Include" />
+            <e p="ClientGetAllService.cs" t="Include" />
+            <e p="ClientGetService.cs" t="Include" />
+            <e p="ClientPublishService.cs" t="Include" />
+            <e p="ClientUpdateService.cs" t="Include" />
           </e>
           <e p="Product" t="Include">
             <e p="ProductDeleteService.cs" t="Include" />
@@ -224,6 +252,8 @@
         </e>
         <e p="WeatherForecast.cs" t="Include" />
         <e p="XHR" t="Include">
+          <e p="business.http" t="Include" />
+          <e p="clients.http" t="Include" />
           <e p="product.http" t="Include" />
           <e p="res-api_1.http" t="Include" />
           <e p="supplier.http" t="Include" />

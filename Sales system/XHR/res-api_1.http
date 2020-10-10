@@ -34,7 +34,7 @@ Content-Type: application/json
 ###
 GET https://localhost:5001/clients
 Accept: */*
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDIzNDEwNTIsImV4cCI6MTYwNzUyNTA1MiwiaWF0IjoxNjAyMzQxMDUyfQ.Il_UMs4v_xwIDh6kQNkgiykggebgXObjZkkmJTIXgq4
 
 ###
 POST https://localhost:5001/sale

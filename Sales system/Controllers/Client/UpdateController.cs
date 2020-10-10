@@ -1,29 +1,37 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Sales_system.Models;
+using Sales_system.Interfaces.Services.Client;
 using Sales_system.Models.Response;
-using Sales_system.Models.Request;
+using Sales_system.Models.Request.Client;
 
 namespace Sales_system.Controllers.Client
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("clients/{id}/[controller]")]
     [Authorize]
-    public class EditClientController : ControllerBase
+    public class UpdateController : ControllerBase
     {
+        private readonly IClientUpdateService _updateService;
+
+        public UpdateController(IClientUpdateService updateService)
+        {
+            _updateService = updateService;
+        }
+
         [HttpPut]
-        public IActionResult Edit(ClientRequest client)
+        public IActionResult Edit(ClientUpdateRequest client, long id)
         {
             Response response = new Response();
 
             try
             {
-                using var db = new salesSystemContext();
-                var vClient = db.Clients.Find(client.Id);
-                vClient.ClientName = client.Name;
-                db.Entry(vClient).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                db.SaveChanges();
+                if (id != client.Id)
+                {
+                    throw new Exception("El id del cliente no es el mismo");
+                }
+
+                _updateService.Update(client);
                 response.Success = true;
             }
             catch (Exception e)

@@ -15,7 +15,7 @@ namespace Sales_system.Models
         public long Id { get; set; }
         public decimal Total { get; set; }
         public DateTime CreatedAt { get; set; }
-        public int FkClientId { get; set; }
+        public long FkClientId { get; set; }
 
         public virtual Client FkClient { get; set; }
         public virtual ICollection<Concept> Concepts { get; set; }

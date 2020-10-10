@@ -12,8 +12,11 @@ namespace Sales_system.Models
             Sales = new HashSet<Sale>();
         }
 
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string ClientName { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
 
         public virtual ICollection<Sale> Sales { get; set; }
     }

@@ -147,6 +147,23 @@ namespace Sales_system.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("client_name");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.Property(e => e.DeletedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("deleted_at")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("updated_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
             });
 
             modelBuilder.Entity<Concept>(entity =>

@@ -1,27 +1,32 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Sales_system.Interfaces.Services.Client;
 using Sales_system.Models;
 using Sales_system.Models.Response;
 
 namespace Sales_system.Controllers.Client
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("clients/{clientId}/[controller]")]
     [Authorize]
-    public class DeleteClientController : ControllerBase
+    public class DeleteController : ControllerBase
     {
-        [HttpDelete("{clientId}")]
-        public IActionResult Delete(int clientId)
+        private readonly IClientDeleteService _deleteService;
+
+        public DeleteController(IClientDeleteService deleteService)
+        {
+            _deleteService = deleteService;
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(long clientId)
         {
             Response response = new Response();
 
             try
             {
-                using salesSystemContext db = new salesSystemContext();
-                Models.Client vClient = db.Clients.Find(clientId);
-                db.Remove(vClient);
-                db.SaveChanges();
+                _deleteService.Delete(clientId);
                 response.Success = true;
             }
             catch (Exception e)
