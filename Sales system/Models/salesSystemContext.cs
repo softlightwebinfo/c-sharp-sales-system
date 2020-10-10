@@ -195,6 +195,17 @@ namespace Sales_system.Models
                     .HasPrecision(16)
                     .HasColumnName("amount");
 
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
+                entity.Property(e => e.DeletedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("deleted_at")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
+
                 entity.Property(e => e.Description)
                     .IsRequired()
                     .HasColumnName("description");
@@ -207,6 +218,12 @@ namespace Sales_system.Models
                 entity.Property(e => e.UnitPrice)
                     .HasPrecision(16, 2)
                     .HasColumnName("unit_price");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("timestamp with time zone")
+                    .HasColumnName("updated_at")
+                    .HasDefaultValueSql("now()")
+                    .HasAnnotation("Relational:ColumnType", "timestamp with time zone");
             });
 
             modelBuilder.Entity<Sale>(entity =>

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Sales_system.Models;
@@ -9,9 +10,10 @@ using Sales_system.Models;
 namespace Sales_system.Migrations
 {
     [DbContext(typeof(salesSystemContext))]
-    partial class salesSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20201010112400_AddColumnsProduct")]
+    partial class AddColumnsProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,8 +76,8 @@ namespace Sales_system.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("fk_business_id");
 
-                    b.Property<long>("FkProductId")
-                        .HasColumnType("bigint")
+                    b.Property<int>("FkProductId")
+                        .HasColumnType("integer")
                         .HasColumnName("fk_product_id");
 
                     b.HasKey("FkBusinessId", "FkProductId")
@@ -145,8 +147,8 @@ namespace Sales_system.Migrations
                         .HasColumnName("amount")
                         .HasDefaultValueSql("0.0");
 
-                    b.Property<long>("FkProductId")
-                        .HasColumnType("bigint")
+                    b.Property<int>("FkProductId")
+                        .HasColumnType("integer")
                         .HasColumnName("fk_product_id");
 
                     b.Property<long>("FkSaleId")
@@ -174,9 +176,9 @@ namespace Sales_system.Migrations
 
             modelBuilder.Entity("Sales_system.Models.Product", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
+                        .HasColumnType("integer")
                         .HasColumnName("id")
                         .UseIdentityByDefaultColumn();
 
@@ -313,8 +315,8 @@ namespace Sales_system.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("fk_supplier_id");
 
-                    b.Property<long>("FkProductId")
-                        .HasColumnType("bigint")
+                    b.Property<int>("FkProductId")
+                        .HasColumnType("integer")
                         .HasColumnName("fk_product_id");
 
                     b.HasKey("FkSupplierId", "FkProductId")

@@ -11,7 +11,7 @@ namespace Sales_system.Models
         public long FkSaleId { get; set; }
         public decimal PriceUnit { get; set; }
         public decimal? Amount { get; set; }
-        public int FkProductId { get; set; }
+        public long FkProductId { get; set; }
         public decimal Total { get; set; }
 
         public virtual Product FkProduct { get; set; }

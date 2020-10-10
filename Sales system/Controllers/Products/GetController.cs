@@ -7,24 +7,24 @@ using Sales_system.Models.Response;
 namespace Sales_system.Controllers.Products
 {
     [ApiController]
-    [Route("products/[controller]")]
+    [Route("products/{id}/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class GetController : ControllerBase
     {
-        private readonly IProductGetAllService _getAllService;
+        private readonly IProductGetService _getService;
 
-        public GetAllController(IProductGetAllService allService)
+        public GetController(IProductGetService getService)
         {
-            _getAllService = allService;
+            _getService = getService;
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult Get(long id)
         {
             var response = new Response();
             try
             {
-                response.Data = _getAllService.GetAll();
+                response.Data = _getService.Get(id);
                 response.Success = true;
             }
             catch (Exception exception)

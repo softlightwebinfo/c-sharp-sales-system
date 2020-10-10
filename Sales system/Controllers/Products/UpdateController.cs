@@ -2,30 +2,32 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sales_system.Interfaces.Services.Product;
+using Sales_system.Models.Request.Product;
 using Sales_system.Models.Response;
 
 namespace Sales_system.Controllers.Products
 {
     [ApiController]
-    [Route("products/[controller]")]
+    [Route("products/{id}/[controller]")]
     [Authorize]
-    public class GetAllController : ControllerBase
+    public class UpdateController : ControllerBase
     {
-        private readonly IProductGetAllService _getAllService;
+        private readonly IProductUpdateService _productUpdateService;
 
-        public GetAllController(IProductGetAllService allService)
+        public UpdateController(IProductUpdateService productUpdateService)
         {
-            _getAllService = allService;
+            _productUpdateService = productUpdateService;
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+        [HttpPut]
+        public IActionResult Put([FromBody] ProductUpdateRequest updateRequest)
         {
             var response = new Response();
             try
             {
-                response.Data = _getAllService.GetAll();
+                _productUpdateService.Update(updateRequest);
                 response.Success = true;
+                response.Message = "Se ha modificado correctamente";
             }
             catch (Exception exception)
             {
