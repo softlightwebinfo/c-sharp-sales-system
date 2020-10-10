@@ -98,6 +98,7 @@
             <e p="Business" t="Include">
               <e p="IBusinessDeleteService.cs" t="Include" />
               <e p="IBusinessService.cs" t="Include" />
+              <e p="IBusinessSuppliersService.cs" t="Include" />
               <e p="IBusinessUpdateService.cs" t="Include" />
             </e>
             <e p="Client" t="Include">
@@ -181,8 +182,13 @@
           </e>
           <e p="Response" t="Include">
             <e p="BusinessPublishResponse.cs" t="Include" />
+            <e p="BusinessSuppliersResponse.cs" t="Include" />
+            <e p="ListPaginationResponse.cs" t="Include" />
             <e p="Response.cs" t="Include" />
             <e p="UserResponse.cs" t="Include" />
+          </e>
+          <e p="ResponseModel" t="Include">
+            <e p="BusinessSupplierItem.cs" t="Include" />
           </e>
           <e p="Sale.cs" t="Include" />
           <e p="salesSystemContext.cs" t="Include" />
@@ -223,6 +229,9 @@
             <e p="BusinessDeleteService.cs" t="Include" />
             <e p="BusinessPublishService.cs" t="Include" />
             <e p="BusinessUpdateService.cs" t="Include" />
+          </e>
+          <e p="BusinessSupplier" t="Include">
+            <e p="BusinessSupplierGetAllService.cs" t="Include" />
           </e>
           <e p="Client" t="Include">
             <e p="ClientDeleteService.cs" t="Include" />

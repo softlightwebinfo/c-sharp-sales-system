@@ -22,6 +22,7 @@ using Sales_system.Repository.Product;
 using Sales_system.Repository.Suppliers;
 using Sales_system.Services;
 using Sales_system.Services.Business;
+using Sales_system.Services.BusinessSupplier;
 using Sales_system.Services.Client;
 using Sales_system.Services.Product;
 using Sales_system.Services.Suppliers;
@@ -70,6 +71,7 @@ namespace Sales_system
             services.AddScoped<IBusinessService, BusinessPublishService>();
             services.AddScoped<IBusinessUpdateService, BusinessUpdateService>();
             services.AddScoped<IBusinessDeleteService, BusinessDeleteService>();
+            services.AddScoped<IBusinessSuppliersService, BusinessSupplierGetAllService>();
 
             // Suppliers Injection Services
             services.AddScoped<ISuppliersService, SuppliersPublishService>();

@@ -9,35 +9,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2852470d-6f2f-4df8-b706-c1e8abd1f617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Repository/Client/IClientRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Client/IClientDeleteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Client/IClientGetAllService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Client/IClientGetService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Client/IClientService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Client/IClientUpdateService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Models/Request/Client/ClientCreateRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Models/Request/Client/ClientUpdateRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Repository/Client/ClientRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Client/ClientDeleteService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Client/ClientGetAllService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Client/ClientGetService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Client/ClientPublishService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/Services/Client/ClientUpdateService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/XHR/business.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sales system/XHR/clients.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessSuppliersService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Response/BusinessSuppliersResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/Response/ListPaginationResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Models/ResponseModel/BusinessSupplierItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sales system/Services/BusinessSupplier/BusinessSupplierGetAllService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sales system/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Client/CreateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/CreateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Client/DeleteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/DeleteController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Client/ReadController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/ReadController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Client/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Client/UpdateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Migrations/salesSystemContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Models/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Models/Request/ClientRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Request/ClientRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Models/Sale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/Sale.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Models/salesSystemContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/Auth/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/Auth/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/GetAllBusinessController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/GetAllBusinessController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sales system/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sales system/XHR/business.http" beforeDir="false" afterPath="$PROJECT_DIR$/Sales system/XHR/business.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sales system/Repository/Business/BusinessRepository.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/DeleteController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Controllers/Suppliers/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/XHR/supplier.http" />
-        <option value="$PROJECT_DIR$/Sales system/Repository/Suppliers/SuppliersRepository.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Models/Request/Product/ProductCreateRequest.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Product/IProductDeleteService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Product/IProductService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Request/Product/ProductUpdateRequest.cs" />
         <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Product/IProductUpdateService.cs" />
@@ -81,7 +57,6 @@
         <option value="$PROJECT_DIR$/Sales system/XHR/product.http" />
         <option value="$PROJECT_DIR$/Sales system/Repository/Product/ProductRepository.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Products/GetAllController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/XHR/business.http" />
         <option value="dc44dfac-54a4-4673-998c-379cbe164ce2/database/salesSystem/schema/public/table/clients/index/clients_pk" />
         <option value="$PROJECT_DIR$/Sales system/Models/Request/ClientRequest.cs" />
         <option value="$PROJECT_DIR$/Sales system/Models/Request/Client/ClientEditRequest.cs" />
@@ -99,14 +74,22 @@
         <option value="$PROJECT_DIR$/Sales system/Services/Client/ClientGetService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Services/Client/ClientPublishService.cs" />
         <option value="$PROJECT_DIR$/Sales system/Services/Client/ClientUpdateService.cs" />
-        <option value="$PROJECT_DIR$/Sales system/Startup.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Products/UpdateController.cs" />
         <option value="$PROJECT_DIR$/Sales system/XHR/res-api_1.http" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/ReadController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/CreateController.cs" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/DeleteController.cs" />
-        <option value="$PROJECT_DIR$/Sales system/XHR/clients.http" />
         <option value="$PROJECT_DIR$/Sales system/Controllers/Client/UpdateController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/XHR/clients.http" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/Auth/LoginController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Interfaces/Services/Business/IBusinessSuppliersService.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Controllers/BusinessSuppliers/GetAllBusinessController.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Startup.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Response/BusinessSuppliersResponse.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Models/Response/ListPaginationResponse.cs" />
+        <option value="$PROJECT_DIR$/Sales system/XHR/business.http" />
+        <option value="$PROJECT_DIR$/Sales system/Models/ResponseModel/BusinessSupplierItem.cs" />
+        <option value="$PROJECT_DIR$/Sales system/Services/BusinessSupplier/BusinessSupplierGetAllService.cs" />
       </list>
     </option>
   </component>
@@ -134,6 +117,102 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/business/1/suppliers" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/business/2/suppliers" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/business/1/products" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://localhost:5001/business/getAllUser/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="https://localhost:5001/clients/37/update" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 37,&#10;  &quot;name&quot;: &quot;Samy AS&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="PUT" />
           <option name="urlBase" value="https://localhost:5001/clients" />
@@ -1080,138 +1159,23 @@
           <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3 update 1&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3 update&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="https://localhost:5001/suppliers/4/update" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 4,&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://localhost:5001/suppl" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:5001/suppliers/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;supplierName&quot;: &quot;Ejemplo 3&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://localhost:5001/suppliers/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwiZW1haWwiOiJyYWZhZWwuZ29uemFsZXouMTczN0BnbWFpbC5jb20iLCJuYmYiOjE2MDExMzcyMDIsImV4cCI6MTYwNjMyMTIwMiwiaWF0IjoxNjAxMTM3MjAyfQ.0PoL3ogAZkBi3w9Dgd9YTeTX2k99ec7_XcaRSL67JzM" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;supplierName&quot;: &quot;Ejemplo 2&quot;,&#10;  &quot;phone&quot;: &quot;+34123456789&quot;,&#10;  &quot;email&quot;: &quot;email@supplier.com&quot;,&#10;  &quot;fkUserId&quot;: 1&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sales system: Sales_system">
-    <configuration name="clients#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/clients.http" runType="Run single request">
+    <configuration name="business#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/business.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="business#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/business.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="business#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/business.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="clients#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/clients.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="clients#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/clients.http" index="3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="clients#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/clients.http" index="4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="clients#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Sales system/XHR/clients.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Sales system: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -1247,19 +1211,19 @@
     <list>
       <item itemvalue=".NET Launch Settings Profile.Sales system: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.Sales system: Sales_system" />
-      <item itemvalue="HTTP Request.clients#4" />
       <item itemvalue="HTTP Request.clients#3" />
-      <item itemvalue="HTTP Request.clients#5" />
-      <item itemvalue="HTTP Request.clients#1" />
       <item itemvalue="HTTP Request.clients#2" />
+      <item itemvalue="HTTP Request.business#2" />
+      <item itemvalue="HTTP Request.business#3" />
+      <item itemvalue="HTTP Request.business#4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.business#4" />
+        <item itemvalue="HTTP Request.business#3" />
+        <item itemvalue="HTTP Request.business#2" />
         <item itemvalue="HTTP Request.clients#2" />
         <item itemvalue="HTTP Request.clients#3" />
-        <item itemvalue="HTTP Request.clients#1" />
-        <item itemvalue="HTTP Request.clients#4" />
-        <item itemvalue="HTTP Request.clients#5" />
       </list>
     </recent_temporary>
   </component>
@@ -1282,7 +1246,7 @@
       <workItem from="1602002325714" duration="8062000" />
       <workItem from="1602326104810" duration="8754000" />
       <workItem from="1602341189147" duration="5000" />
-      <workItem from="1602341338698" duration="1120000" />
+      <workItem from="1602341338698" duration="6322000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor de código en clases y empezar a implementar patron de diseño SOLID">
       <created>1601754560183</created>
@@ -1347,7 +1311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602330387078</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Client controller">
+      <created>1602342571384</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602342571384</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1407,7 +1378,8 @@
     <MESSAGE value="LIbs" />
     <MESSAGE value="CRUD de Suppliers" />
     <MESSAGE value="Add migrations, services, models, Controller the Products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add migrations, services, models, Controller the Products" />
+    <MESSAGE value="Client controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2240" y="217" key="#Docker" timestamp="1601131628042">
@@ -1433,110 +1405,110 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2498" y="415" key="DockerComposeFileDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601131603011" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1602342315371">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom" timestamp="1602347638879">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433181" />
     <state width="1878" height="403" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045491" />
     <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326315644" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567583" />
-    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342315371" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1602342315369">
+    <state width="1878" height="306" key="GridCell.Tab.0.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602347638879" />
+    <state width="1878" height="306" key="GridCell.Tab.0.center" timestamp="1602347638876">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433179" />
     <state width="1878" height="403" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045489" />
     <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326315642" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567580" />
-    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342315369" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1602342315368">
+    <state width="1878" height="306" key="GridCell.Tab.0.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602347638876" />
+    <state width="1878" height="306" key="GridCell.Tab.0.left" timestamp="1602347638875">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433178" />
     <state width="1878" height="403" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045487" />
     <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326315640" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567578" />
-    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342315368" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1602342315370">
+    <state width="1878" height="306" key="GridCell.Tab.0.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602347638875" />
+    <state width="1878" height="306" key="GridCell.Tab.0.right" timestamp="1602347638878">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602006433180" />
     <state width="1878" height="403" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045490" />
     <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326315643" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601056567581" />
-    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342315370" />
-    <state width="1878" height="403" key="GridCell.Tab.1.bottom" timestamp="1602341178823">
+    <state width="1878" height="306" key="GridCell.Tab.0.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602347638878" />
+    <state width="1878" height="403" key="GridCell.Tab.1.bottom" timestamp="1602346879443">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.1.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933344" />
     <state width="1878" height="403" key="GridCell.Tab.1.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045495" />
-    <state width="1878" height="403" key="GridCell.Tab.1.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178823" />
-    <state width="1878" height="403" key="GridCell.Tab.1.center" timestamp="1602341178821">
+    <state width="1878" height="403" key="GridCell.Tab.1.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879443" />
+    <state width="1878" height="403" key="GridCell.Tab.1.center" timestamp="1602346879440">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.1.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933342" />
     <state width="1878" height="403" key="GridCell.Tab.1.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045493" />
-    <state width="1878" height="403" key="GridCell.Tab.1.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178821" />
-    <state width="1878" height="403" key="GridCell.Tab.1.left" timestamp="1602341178820">
+    <state width="1878" height="403" key="GridCell.Tab.1.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879440" />
+    <state width="1878" height="403" key="GridCell.Tab.1.left" timestamp="1602346879440">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.1.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933340" />
     <state width="1878" height="403" key="GridCell.Tab.1.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045493" />
-    <state width="1878" height="403" key="GridCell.Tab.1.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178820" />
-    <state width="1878" height="403" key="GridCell.Tab.1.right" timestamp="1602341178822">
+    <state width="1878" height="403" key="GridCell.Tab.1.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879440" />
+    <state width="1878" height="403" key="GridCell.Tab.1.right" timestamp="1602346879442">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.1.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933343" />
     <state width="1878" height="403" key="GridCell.Tab.1.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045494" />
-    <state width="1878" height="403" key="GridCell.Tab.1.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178822" />
-    <state width="1878" height="403" key="GridCell.Tab.2.bottom" timestamp="1602341178828">
+    <state width="1878" height="403" key="GridCell.Tab.1.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879442" />
+    <state width="1878" height="403" key="GridCell.Tab.2.bottom" timestamp="1602346879449">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.2.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933349" />
     <state width="1878" height="403" key="GridCell.Tab.2.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045500" />
-    <state width="1878" height="403" key="GridCell.Tab.2.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178828" />
-    <state width="1878" height="403" key="GridCell.Tab.2.center" timestamp="1602341178826">
+    <state width="1878" height="403" key="GridCell.Tab.2.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879449" />
+    <state width="1878" height="403" key="GridCell.Tab.2.center" timestamp="1602346879446">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.2.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933346" />
     <state width="1878" height="403" key="GridCell.Tab.2.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045498" />
-    <state width="1878" height="403" key="GridCell.Tab.2.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178826" />
-    <state width="1878" height="403" key="GridCell.Tab.2.left" timestamp="1602341178825">
+    <state width="1878" height="403" key="GridCell.Tab.2.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879446" />
+    <state width="1878" height="403" key="GridCell.Tab.2.left" timestamp="1602346879445">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.2.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933345" />
     <state width="1878" height="403" key="GridCell.Tab.2.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045497" />
-    <state width="1878" height="403" key="GridCell.Tab.2.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178825" />
-    <state width="1878" height="403" key="GridCell.Tab.2.right" timestamp="1602341178827">
+    <state width="1878" height="403" key="GridCell.Tab.2.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879445" />
+    <state width="1878" height="403" key="GridCell.Tab.2.right" timestamp="1602346879447">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.2.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933348" />
     <state width="1878" height="403" key="GridCell.Tab.2.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045499" />
-    <state width="1878" height="403" key="GridCell.Tab.2.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178827" />
-    <state width="1878" height="403" key="GridCell.Tab.3.bottom" timestamp="1602341178831">
+    <state width="1878" height="403" key="GridCell.Tab.2.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879447" />
+    <state width="1878" height="403" key="GridCell.Tab.3.bottom" timestamp="1602346879453">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.3.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933355" />
     <state width="1878" height="403" key="GridCell.Tab.3.bottom/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045504" />
-    <state width="1878" height="403" key="GridCell.Tab.3.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178831" />
-    <state width="1878" height="403" key="GridCell.Tab.3.center" timestamp="1602341178829">
+    <state width="1878" height="403" key="GridCell.Tab.3.bottom/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879453" />
+    <state width="1878" height="403" key="GridCell.Tab.3.center" timestamp="1602346879451">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.3.center/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933353" />
     <state width="1878" height="403" key="GridCell.Tab.3.center/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045502" />
-    <state width="1878" height="403" key="GridCell.Tab.3.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178829" />
-    <state width="1878" height="403" key="GridCell.Tab.3.left" timestamp="1602341178829">
+    <state width="1878" height="403" key="GridCell.Tab.3.center/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879451" />
+    <state width="1878" height="403" key="GridCell.Tab.3.left" timestamp="1602346879450">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.3.left/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933351" />
     <state width="1878" height="403" key="GridCell.Tab.3.left/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045501" />
-    <state width="1878" height="403" key="GridCell.Tab.3.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178829" />
-    <state width="1878" height="403" key="GridCell.Tab.3.right" timestamp="1602341178830">
+    <state width="1878" height="403" key="GridCell.Tab.3.left/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879450" />
+    <state width="1878" height="403" key="GridCell.Tab.3.right" timestamp="1602346879452">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="403" key="GridCell.Tab.3.right/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601759933354" />
     <state width="1878" height="403" key="GridCell.Tab.3.right/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601141045503" />
-    <state width="1878" height="403" key="GridCell.Tab.3.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341178830" />
+    <state width="1878" height="403" key="GridCell.Tab.3.right/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602346879452" />
     <state width="1878" height="403" key="GridCell.Tab.4.bottom" timestamp="1602341178834">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -1566,11 +1538,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601038144105" />
-    <state x="2330" y="225" key="RiderGenerateDialog" timestamp="1602326604993">
+    <state x="2330" y="225" key="RiderGenerateDialog" timestamp="1602345086266">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2330" y="225" key="RiderGenerateDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326604993" />
-    <state x="2330" y="225" key="RiderGenerateDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602009697932" />
+    <state x="2330" y="225" key="RiderGenerateDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602345086266" />
     <state x="2149" y="179" key="SettingsEditor" timestamp="1601804008475">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -1580,11 +1552,11 @@
     </state>
     <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326811191" />
     <state x="1780" y="100" width="1720" height="880" key="VCS.FileHistoryDialog/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602341584973" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1602330406720">
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1602342576067">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601803937198" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602330406720" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342576067" />
     <state x="2422" y="326" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601131894922">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -1625,12 +1597,12 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2318" y="172" width="644" height="735" key="find.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602339526994" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602342278700">
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602345716777">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1601799561151" />
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1601140256619" />
     <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1057.1920.1057/1680.0.1920.1080/0.23.1680.979@1680.0.1920.1080" timestamp="1602326547767" />
-    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602342278700" />
+    <state x="2303" y="239" width="672" height="678" key="search.everywhere.popup/536.-1080.1920.1080/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1602345716777" />
   </component>
 </project>

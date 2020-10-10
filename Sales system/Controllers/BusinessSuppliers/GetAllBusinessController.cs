@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sales_system.Exceptions.Business;
-using Sales_system.Models;
+using Sales_system.Interfaces.Services.Business;
 using Sales_system.Models.Response;
 
 namespace Sales_system.Controllers.BusinessSuppliers
@@ -13,16 +12,20 @@ namespace Sales_system.Controllers.BusinessSuppliers
     [Authorize]
     public class GetAllBusinessController : ControllerBase
     {
+        private readonly IBusinessSuppliersService _suppliersService;
+
+        public GetAllBusinessController(IBusinessSuppliersService suppliersService)
+        {
+            _suppliersService = suppliersService;
+        }
+
         [HttpGet]
         public IActionResult Get(int business)
         {
             var response = new Response();
             try
             {
-                using var db = new salesSystemContext();
-                var lst = db.BusinessSuppliers.Where(e => e.FkBusinessId == business).ToList();
-                if (lst.Count == 0) throw new BusinessExection("No se ha encontrado ningun proveedor asociado a esta empresa");
-                response.Data = lst;
+                response.Data = _suppliersService.GetAll(business);
                 response.Success = true;
             }
             catch (BusinessExection exception)
